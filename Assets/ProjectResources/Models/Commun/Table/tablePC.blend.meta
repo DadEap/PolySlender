@@ -1,30 +1,13 @@
 fileFormatVersion: 2
-guid: 42b8e3c3bbf3940448ee61b511052e81
+guid: a6d02db5a70c2c4428d0e64d374f7b78
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Batiment
-    100004: Domotique
-    100006: sol__escaliers
-    100008: SurfCurve
     400000: //RootNode
-    400002: Batiment
-    400004: Domotique
-    400006: sol__escaliers
-    400008: SurfCurve
-    2300000: Batiment
-    2300002: Domotique
-    2300004: sol__escaliers
-    2300006: SurfCurve
-    3300000: Batiment
-    3300002: Domotique
-    3300004: sol__escaliers
-    3300006: SurfCurve
-    4300000: Domotique
-    4300002: Batiment
-    4300004: sol__escaliers
-    4300006: SurfCurve
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Cube
     7400000: Default Take
     9500000: //RootNode
   materials:
