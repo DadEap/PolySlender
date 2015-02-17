@@ -19,6 +19,7 @@ $RECYCLE.BIN/
 Temp/
 Obj/
 UnityGenerated/
+Build/
 Library/
 Assets/AssetStoreTools*
 # Unity3D generated meta files
