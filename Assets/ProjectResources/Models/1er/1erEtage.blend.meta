@@ -12,6 +12,10 @@ ModelImporter:
     100012: SurfCurve_002
     100014: Courbure_Scolarit_
     100016: Escalier_entr_e
+    100018: 1erEtage
+    100020: Courbure_Scolarite
+    100022: Escalier_entree
+    100024: Escalier_Prod
     400000: //RootNode
     400002: Batiment
     400004: Domotique
@@ -21,6 +25,10 @@ ModelImporter:
     400012: SurfCurve_002
     400014: Courbure_Scolarit_
     400016: Escalier_entr_e
+    400018: 1erEtage
+    400020: Courbure_Scolarite
+    400022: Escalier_entree
+    400024: Escalier_Prod
     2300000: Batiment
     2300002: Domotique
     2300004: sol__escaliers
@@ -30,6 +38,10 @@ ModelImporter:
     2300012: //RootNode
     2300014: Courbure_Scolarit_
     2300016: Escalier_entr_e
+    2300018: 1erEtage
+    2300020: Courbure_Scolarite
+    2300022: Escalier_entree
+    2300024: Escalier_Prod
     3300000: Batiment
     3300002: Domotique
     3300004: sol__escaliers
@@ -39,6 +51,10 @@ ModelImporter:
     3300012: //RootNode
     3300014: Courbure_Scolarit_
     3300016: Escalier_entr_e
+    3300018: 1erEtage
+    3300020: Courbure_Scolarite
+    3300022: Escalier_entree
+    3300024: Escalier_Prod
     4300000: SurfCurve_001
     4300002: SurfCurve_002
     4300004: SurfCurve
@@ -48,6 +64,9 @@ ModelImporter:
     4300012: 1erEtage
     4300014: Courbure_Scolarit_
     4300016: Escalier_entr_e
+    4300018: Escalier_Prod
+    4300020: Courbure_Scolarite
+    4300022: Escalier_entree
     7400000: Default Take
     9500000: //RootNode
   materials:
