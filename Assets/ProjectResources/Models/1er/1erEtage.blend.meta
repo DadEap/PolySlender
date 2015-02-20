@@ -29,6 +29,7 @@ ModelImporter:
     100046: Grille_010
     100048: Support_Droit
     100050: Support_Gauche_001
+    100052: Grille_002
     400000: //RootNode
     400002: Batiment
     400004: Domotique
@@ -55,6 +56,7 @@ ModelImporter:
     400046: Grille_010
     400048: Support_Droit
     400050: Support_Gauche_001
+    400052: Grille_002
     2300000: Batiment
     2300002: Domotique
     2300004: sol__escaliers
@@ -81,6 +83,7 @@ ModelImporter:
     2300046: Grille_010
     2300048: Support_Droit
     2300050: Support_Gauche_001
+    2300052: Grille_002
     3300000: Batiment
     3300002: Domotique
     3300004: sol__escaliers
@@ -107,6 +110,7 @@ ModelImporter:
     3300046: Grille_010
     3300048: Support_Droit
     3300050: Support_Gauche_001
+    3300052: Grille_002
     4300000: SurfCurve_001
     4300002: SurfCurve_002
     4300004: SurfCurve
@@ -132,6 +136,7 @@ ModelImporter:
     4300044: Support_Gauche_001
     4300046: Barre_Bois_001
     4300048: Support_Droit
+    4300050: Grille_002
     7400000: Default Take
     9500000: //RootNode
   materials:
