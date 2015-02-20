@@ -45,6 +45,9 @@ ModelImporter:
     100078: PorteVitree
     100080: PorteVitree_001
     100082: //RootNode
+    100084: Barri_re_biais_001
+    100086: Barri_re_biais_000
+    100088: Barri_re_biais_002
     400000: BaieVitree
     400002: BaieVitree_001
     400004: BaieVitree_002
@@ -87,6 +90,9 @@ ModelImporter:
     400078: PorteVitree
     400080: PorteVitree_001
     400082: //RootNode
+    400084: Barri_re_biais_001
+    400086: Barri_re_biais_000
+    400088: Barri_re_biais_002
     2300000: BaieVitree
     2300002: BaieVitree_001
     2300004: BaieVitree_002
@@ -125,6 +131,9 @@ ModelImporter:
     2300070: Plane
     2300072: PorteVitree
     2300074: PorteVitree_001
+    2300076: Barri_re_biais_001
+    2300078: Barri_re_biais_000
+    2300080: Barri_re_biais_002
     3300000: BaieVitree
     3300002: BaieVitree_001
     3300004: BaieVitree_002
@@ -163,6 +172,9 @@ ModelImporter:
     3300070: Plane
     3300072: PorteVitree
     3300074: PorteVitree_001
+    3300076: Barri_re_biais_001
+    3300078: Barri_re_biais_000
+    3300080: Barri_re_biais_002
     4300000: Plane
     4300002: EscaliersHall
     4300004: BaieVitreeCafetExterieur
@@ -201,6 +213,9 @@ ModelImporter:
     4300070: BaieVitree_001
     4300072: BaieVitree
     4300074: PorteVitree
+    4300076: Barri_re_biais_001
+    4300078: Barri_re_biais_002
+    4300080: Barri_re_biais_000
     7400000: Default Take
     9500000: //RootNode
   materials:
