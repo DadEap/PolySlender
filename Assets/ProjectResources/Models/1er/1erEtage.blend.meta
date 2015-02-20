@@ -16,6 +16,19 @@ ModelImporter:
     100020: Courbure_Scolarite
     100022: Escalier_entree
     100024: Escalier_Prod
+    100026: Barre_Bois_001
+    100028: Grille_000
+    100030: Grille_001
+    100032: Grille_003
+    100034: Grille_004
+    100036: Grille_005
+    100038: Grille_006
+    100040: Grille_007
+    100042: Grille_008
+    100044: Grille_009
+    100046: Grille_010
+    100048: Support_Droit
+    100050: Support_Gauche_001
     400000: //RootNode
     400002: Batiment
     400004: Domotique
@@ -29,6 +42,19 @@ ModelImporter:
     400020: Courbure_Scolarite
     400022: Escalier_entree
     400024: Escalier_Prod
+    400026: Barre_Bois_001
+    400028: Grille_000
+    400030: Grille_001
+    400032: Grille_003
+    400034: Grille_004
+    400036: Grille_005
+    400038: Grille_006
+    400040: Grille_007
+    400042: Grille_008
+    400044: Grille_009
+    400046: Grille_010
+    400048: Support_Droit
+    400050: Support_Gauche_001
     2300000: Batiment
     2300002: Domotique
     2300004: sol__escaliers
@@ -42,6 +68,19 @@ ModelImporter:
     2300020: Courbure_Scolarite
     2300022: Escalier_entree
     2300024: Escalier_Prod
+    2300026: Barre_Bois_001
+    2300028: Grille_000
+    2300030: Grille_001
+    2300032: Grille_003
+    2300034: Grille_004
+    2300036: Grille_005
+    2300038: Grille_006
+    2300040: Grille_007
+    2300042: Grille_008
+    2300044: Grille_009
+    2300046: Grille_010
+    2300048: Support_Droit
+    2300050: Support_Gauche_001
     3300000: Batiment
     3300002: Domotique
     3300004: sol__escaliers
@@ -55,6 +94,19 @@ ModelImporter:
     3300020: Courbure_Scolarite
     3300022: Escalier_entree
     3300024: Escalier_Prod
+    3300026: Barre_Bois_001
+    3300028: Grille_000
+    3300030: Grille_001
+    3300032: Grille_003
+    3300034: Grille_004
+    3300036: Grille_005
+    3300038: Grille_006
+    3300040: Grille_007
+    3300042: Grille_008
+    3300044: Grille_009
+    3300046: Grille_010
+    3300048: Support_Droit
+    3300050: Support_Gauche_001
     4300000: SurfCurve_001
     4300002: SurfCurve_002
     4300004: SurfCurve
@@ -67,6 +119,19 @@ ModelImporter:
     4300018: Escalier_Prod
     4300020: Courbure_Scolarite
     4300022: Escalier_entree
+    4300024: Grille_010
+    4300026: Grille_009
+    4300028: Grille_008
+    4300030: Grille_007
+    4300032: Grille_006
+    4300034: Grille_005
+    4300036: Grille_004
+    4300038: Grille_003
+    4300040: Grille_001
+    4300042: Grille_000
+    4300044: Support_Gauche_001
+    4300046: Barre_Bois_001
+    4300048: Support_Droit
     7400000: Default Take
     9500000: //RootNode
   materials:
