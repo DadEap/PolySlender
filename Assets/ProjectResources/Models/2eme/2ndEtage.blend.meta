@@ -264,6 +264,14 @@ ModelImporter:
     100516: Empty_021
     100518: Plafond
     100520: Sol_001
+    100522: Barre_Bois_001
+    100524: Grille_001
+    100526: Support_Droit_001
+    100528: Support_Gauche_001
+    100530: Support_Gauche_005
+    100532: Support_Gauche_000
+    100534: Cylinder_168
+    100536: Support_Gauche_002
     400000: //RootNode
     400002: Cube
     400004: Cube_001
@@ -525,6 +533,14 @@ ModelImporter:
     400516: Empty_021
     400518: Plafond
     400520: Sol_001
+    400522: Barre_Bois_001
+    400524: Grille_001
+    400526: Support_Droit_001
+    400528: Support_Gauche_001
+    400530: Support_Gauche_005
+    400532: Support_Gauche_000
+    400534: Cylinder_168
+    400536: Support_Gauche_002
     2300000: Cube
     2300002: Cube_001
     2300004: Cube_002
@@ -754,6 +770,14 @@ ModelImporter:
     2300452: Cylinder_167
     2300454: Plafond
     2300456: Sol_001
+    2300458: Barre_Bois_001
+    2300460: Grille_001
+    2300462: Support_Droit_001
+    2300464: Support_Gauche_001
+    2300466: Support_Gauche_005
+    2300468: Support_Gauche_000
+    2300470: Cylinder_168
+    2300472: Support_Gauche_002
     3300000: Cube
     3300002: Cube_001
     3300004: Cube_002
@@ -983,6 +1007,14 @@ ModelImporter:
     3300452: Cylinder_167
     3300454: Plafond
     3300456: Sol_001
+    3300458: Barre_Bois_001
+    3300460: Grille_001
+    3300462: Support_Droit_001
+    3300464: Support_Gauche_001
+    3300466: Support_Gauche_005
+    3300468: Support_Gauche_000
+    3300470: Cylinder_168
+    3300472: Support_Gauche_002
     4300000: Poteau_UnixA_05
     4300002: Poteau_UnixA_04
     4300004: Poteau_UnixA_03
@@ -1212,6 +1244,14 @@ ModelImporter:
     4300452: Cylinder_167
     4300454: Plafond
     4300456: Sol_001
+    4300458: Support_Gauche_005
+    4300460: Support_Gauche_001
+    4300462: Support_Droit_001
+    4300464: Grille_001
+    4300466: Barre_Bois_001
+    4300468: Support_Gauche_000
+    4300470: Support_Gauche_002
+    4300472: Cylinder_168
     7400000: Default Take
     9500000: //RootNode
   materials:
