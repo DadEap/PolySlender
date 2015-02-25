@@ -41,3 +41,8 @@ ExportedObj/
 *.user
 *.unityproj
 *.booproj
+
+# ===================================== #
+# Blender generated                     #
+# ===================================== #
+*.blend1
