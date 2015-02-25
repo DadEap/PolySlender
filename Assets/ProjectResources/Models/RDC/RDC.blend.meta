@@ -48,6 +48,14 @@ ModelImporter:
     100084: Barri_re_biais_001
     100086: Barri_re_biais_000
     100088: Barri_re_biais_002
+    100090: Support_Gauche_000
+    100092: Cylinder_000
+    100094: Cylinder_001
+    100096: Cylinder_002
+    100098: Cylinder_003
+    100100: Cylinder_004
+    100102: Cylinder_006
+    100104: Cylinder_005
     400000: BaieVitree
     400002: BaieVitree_001
     400004: BaieVitree_002
@@ -93,6 +101,14 @@ ModelImporter:
     400084: Barri_re_biais_001
     400086: Barri_re_biais_000
     400088: Barri_re_biais_002
+    400090: Support_Gauche_000
+    400092: Cylinder_000
+    400094: Cylinder_001
+    400096: Cylinder_002
+    400098: Cylinder_003
+    400100: Cylinder_004
+    400102: Cylinder_006
+    400104: Cylinder_005
     2300000: BaieVitree
     2300002: BaieVitree_001
     2300004: BaieVitree_002
@@ -134,6 +150,14 @@ ModelImporter:
     2300076: Barri_re_biais_001
     2300078: Barri_re_biais_000
     2300080: Barri_re_biais_002
+    2300082: Support_Gauche_000
+    2300084: Cylinder_000
+    2300086: Cylinder_001
+    2300088: Cylinder_002
+    2300090: Cylinder_003
+    2300092: Cylinder_004
+    2300094: Cylinder_006
+    2300096: Cylinder_005
     3300000: BaieVitree
     3300002: BaieVitree_001
     3300004: BaieVitree_002
@@ -175,6 +199,14 @@ ModelImporter:
     3300076: Barri_re_biais_001
     3300078: Barri_re_biais_000
     3300080: Barri_re_biais_002
+    3300082: Support_Gauche_000
+    3300084: Cylinder_000
+    3300086: Cylinder_001
+    3300088: Cylinder_002
+    3300090: Cylinder_003
+    3300092: Cylinder_004
+    3300094: Cylinder_006
+    3300096: Cylinder_005
     4300000: Plane
     4300002: EscaliersHall
     4300004: BaieVitreeCafetExterieur
@@ -216,6 +248,14 @@ ModelImporter:
     4300076: Barri_re_biais_001
     4300078: Barri_re_biais_002
     4300080: Barri_re_biais_000
+    4300082: Support_Gauche_000
+    4300084: Cylinder_001
+    4300086: Cylinder_000
+    4300088: Cylinder_006
+    4300090: Cylinder_004
+    4300092: Cylinder_003
+    4300094: Cylinder_002
+    4300096: Cylinder_005
     7400000: Default Take
     9500000: //RootNode
   materials:
