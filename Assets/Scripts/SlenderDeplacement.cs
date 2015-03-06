@@ -3,63 +3,90 @@ using System.Collections;
 
 public class SlenderDeplacement : MonoBehaviour {
 
-	public GameObject player;
+	public Transform player;
+	public bool isSeen;
 	public float radius;
-	public bool inRange;
-	public bool inSight;
-	bool justwarp;
-	SphereCollider rangeCollider;
-	Vector3 sightRange;
-	NavMeshAgent agent;
 	public int timeWarping;
-	int compteur;
-	Vector3 target;
+	private NavMeshAgent agent;
+	private int timeCompteur;
+	private Vector3 target;
+	private bool hasSeen;
+
+	private SlenderSight slenderSight;
 	// Use this for initialization
 	void Start () {
-		agent = GetComponent<NavMeshAgent> ();
-		inRange = false;
-		inSight = false;
-		radius = 30;
-		justwarp = false;
-		compteur = 0;
+
+		radius = 20;
+		timeCompteur = 0;
 		timeWarping = 100;
+		isSeen = false;
+		hasSeen = false;
+		slenderSight = GetComponent<SlenderSight> ();
+		agent = GetComponent<NavMeshAgent> ();
+		player = GameObject.FindGameObjectWithTag ("Player").transform;
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-
-		if (inSight)
+		if (slenderSight.playerInRange)
 		{
-			agent.SetDestination (player.transform.position);
-		} 
-		else if (inRange)
-		{
-
+			LookForPosition();
 		}
-		else
-		{
-			if(!justwarp)
-			{
-				target = Random.insideUnitSphere*radius;
-				target += transform.position;
-				NavMeshHit hit;
-				NavMesh.SamplePosition(target,out hit,radius,1);
-				agent.Warp(hit.position);
-				justwarp = true;
 
+		if (isSeen && slenderSight.playerInSight) 
+		{
+			Waiting ();
+		}
+		else if (slenderSight.playerInSight) {
+			Chasing ();
+		}  
+		else 
+		{
+			Warping();
+		}
+	}
+
+	void Chasing()
+	{
+		agent.SetDestination (player.position);
+		hasSeen = true;
+	}
+
+	void Warping()
+	{
+
+		if(timeCompteur == 0)
+		{
+			if(hasSeen)
+			{
+				target = slenderSight.lastViewToGo;
+				hasSeen = false;
 			}
 			else
 			{
-				compteur++;
+				target = Random.insideUnitSphere*radius;
+				target += player.position;
 			}
+			NavMeshHit hit;
+			NavMesh.SamplePosition(target,out hit,radius,1);
+			agent.Warp(hit.position);			
 		}
-		if (compteur > timeWarping)
+		timeCompteur++;
+		if (timeCompteur > timeWarping)
 		{
-			justwarp = false;
-			compteur = 0;
+			timeCompteur = 0;
 		}
-	
+	}
+
+	void Waiting ()
+	{
+		agent.Stop();
+	}
+
+	void LookForPosition()
+	{
+		agent.transform.LookAt (player.transform.position);
 	}
 }
