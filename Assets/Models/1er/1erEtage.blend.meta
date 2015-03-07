@@ -41,6 +41,33 @@ ModelImporter:
     100070: Cylinder_004
     100072: Cylinder_005
     100074: Cylinder_006
+    100076: Grille_012
+    100078: Support_Escalier_production
+    100080: Support_escalier_BU
+    100082: Plancher
+    100084: Courbure_Scolarite_001
+    100086: Inter_Plafond_Plancher
+    100088: Plafond_RDC
+    100090: Orientation_X
+    100092: Inter_Plafond_Plancher_001
+    100094: Inter_Plafond_Plancher_002
+    100096: Toilettes_1
+    100098: Toilettes_2
+    100100: Portes
+    100102: Fenetres_000
+    100104: Fenetres_002
+    100106: Murs
+    100108: Murs_001
+    100110: Murs_002
+    100112: Murs_003
+    100114: Murs_004
+    100116: Murs_005
+    100118: Murs_006
+    100120: Murs_007
+    100122: Murs_008
+    100124: Murs_000
+    100126: Murs_009
+    100128: Sortie_001
     400000: //RootNode
     400002: Batiment
     400004: Domotique
@@ -79,6 +106,33 @@ ModelImporter:
     400070: Cylinder_004
     400072: Cylinder_005
     400074: Cylinder_006
+    400076: Grille_012
+    400078: Support_Escalier_production
+    400080: Support_escalier_BU
+    400082: Plancher
+    400084: Courbure_Scolarite_001
+    400086: Inter_Plafond_Plancher
+    400088: Plafond_RDC
+    400090: Orientation_X
+    400092: Inter_Plafond_Plancher_001
+    400094: Inter_Plafond_Plancher_002
+    400096: Toilettes_1
+    400098: Toilettes_2
+    400100: Portes
+    400102: Fenetres_000
+    400104: Fenetres_002
+    400106: Murs
+    400108: Murs_001
+    400110: Murs_002
+    400112: Murs_003
+    400114: Murs_004
+    400116: Murs_005
+    400118: Murs_006
+    400120: Murs_007
+    400122: Murs_008
+    400124: Murs_000
+    400126: Murs_009
+    400128: Sortie_001
     2300000: Batiment
     2300002: Domotique
     2300004: sol__escaliers
@@ -117,6 +171,33 @@ ModelImporter:
     2300070: Cylinder_004
     2300072: Cylinder_005
     2300074: Cylinder_006
+    2300076: Grille_012
+    2300078: Support_Escalier_production
+    2300080: Support_escalier_BU
+    2300082: Plancher
+    2300084: Courbure_Scolarite_001
+    2300086: Inter_Plafond_Plancher
+    2300088: Plafond_RDC
+    2300090: Orientation_X
+    2300092: Inter_Plafond_Plancher_001
+    2300094: Inter_Plafond_Plancher_002
+    2300096: Toilettes_1
+    2300098: Toilettes_2
+    2300100: Portes
+    2300102: Fenetres_000
+    2300104: Fenetres_002
+    2300106: Murs
+    2300108: Murs_001
+    2300110: Murs_002
+    2300112: Murs_003
+    2300114: Murs_004
+    2300116: Murs_005
+    2300118: Murs_006
+    2300120: Murs_007
+    2300122: Murs_008
+    2300124: Murs_000
+    2300126: Murs_009
+    2300128: Sortie_001
     3300000: Batiment
     3300002: Domotique
     3300004: sol__escaliers
@@ -155,6 +236,33 @@ ModelImporter:
     3300070: Cylinder_004
     3300072: Cylinder_005
     3300074: Cylinder_006
+    3300076: Grille_012
+    3300078: Support_Escalier_production
+    3300080: Support_escalier_BU
+    3300082: Plancher
+    3300084: Courbure_Scolarite_001
+    3300086: Inter_Plafond_Plancher
+    3300088: Plafond_RDC
+    3300090: Orientation_X
+    3300092: Inter_Plafond_Plancher_001
+    3300094: Inter_Plafond_Plancher_002
+    3300096: Toilettes_1
+    3300098: Toilettes_2
+    3300100: Portes
+    3300102: Fenetres_000
+    3300104: Fenetres_002
+    3300106: Murs
+    3300108: Murs_001
+    3300110: Murs_002
+    3300112: Murs_003
+    3300114: Murs_004
+    3300116: Murs_005
+    3300118: Murs_006
+    3300120: Murs_007
+    3300122: Murs_008
+    3300124: Murs_000
+    3300126: Murs_009
+    3300128: Sortie_001
     4300000: SurfCurve_001
     4300002: SurfCurve_002
     4300004: SurfCurve
@@ -191,6 +299,32 @@ ModelImporter:
     4300066: Cylinder_004
     4300068: Cylinder_005
     4300070: Cylinder_006
+    4300072: Support_Escalier_production
+    4300074: Grille_012
+    4300076: Support_escalier_BU
+    4300078: Plancher
+    4300080: Inter_Plafond_Plancher
+    4300082: Plafond_RDC
+    4300084: Courbure_Scolarite_001
+    4300086: Orientation_X
+    4300088: Inter_Plafond_Plancher_002
+    4300090: Toilettes_1
+    4300092: Toilettes_2
+    4300094: Fenetres_000
+    4300096: Portes
+    4300098: Fenetres_002
+    4300100: Murs_008
+    4300102: Murs_007
+    4300104: Murs_006
+    4300106: Murs_005
+    4300108: Murs_004
+    4300110: Murs_003
+    4300112: Murs_002
+    4300114: Murs_001
+    4300116: Murs_009
+    4300118: Murs
+    4300120: Murs_000
+    4300122: Sortie_001
     7400000: Default Take
     9500000: //RootNode
   materials:
