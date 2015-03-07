@@ -30,6 +30,7 @@ GameObject:
   - 114: {fileID: 11424380}
   - 81: {fileID: 8124380}
   - 114: {fileID: 11464614}
+  - 82: {fileID: 8242186}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -50,6 +51,7 @@ GameObject:
   - 114: {fileID: 11424384}
   - 114: {fileID: 11424382}
   - 54: {fileID: 5424380}
+  - 114: {fileID: 11400842}
   m_Layer: 0
   m_Name: First Person Controller
   m_TagString: Untagged
@@ -206,6 +208,64 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 124380}
   m_Enabled: 1
+--- !u!82 &8242186
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124380}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 9603dbad70504ac4186d8e52962f8ffc, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!92 &9224380
 Behaviour:
   m_ObjectHideFlags: 1
@@ -248,6 +308,24 @@ Light:
   m_ShadowAngle: 0
   m_IndirectIntensity: 1
   m_AreaSize: {x: 1, y: 1}
+--- !u!114 &11400842
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f736cab4e19148429d4a82d2d2d33ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  concreteSoundStep: []
+  woodSoundStep: []
+  metalSoundStep: []
+  terrainSoundStep: []
+  normalSpeed: 0
+  sprintSpeed: 0
+  delayBetweenStep: 0
 --- !u!114 &11424380
 MonoBehaviour:
   m_ObjectHideFlags: 1

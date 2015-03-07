@@ -21,8 +21,6 @@ public class Acceleration : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
-
 		motor = GameObject.Find("First Person Controller").GetComponent<CharacterMotor>();
 		controller = GetComponent<CharacterController>();
 		delay = delayBetweenStep;
