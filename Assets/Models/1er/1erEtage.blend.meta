@@ -68,18 +68,6 @@ ModelImporter:
     100124: Murs_000
     100126: Murs_009
     100128: Sortie_001
-    100130: Fenetres_001
-    100132: Fenetres_003
-    100134: Fenetres_004
-    100136: Plancher_001
-    100138: Fenetres_005
-    100140: Fenetres_006
-    100142: Fenetres_007
-    100144: Fenetres_008
-    100146: Portes_001
-    100148: Tableau118
-    100150: Tableau119
-    100152: Tableau120
     400000: //RootNode
     400002: Batiment
     400004: Domotique
@@ -145,18 +133,6 @@ ModelImporter:
     400124: Murs_000
     400126: Murs_009
     400128: Sortie_001
-    400130: Fenetres_001
-    400132: Fenetres_003
-    400134: Fenetres_004
-    400136: Plancher_001
-    400138: Fenetres_005
-    400140: Fenetres_006
-    400142: Fenetres_007
-    400144: Fenetres_008
-    400146: Portes_001
-    400148: Tableau118
-    400150: Tableau119
-    400152: Tableau120
     2300000: Batiment
     2300002: Domotique
     2300004: sol__escaliers
@@ -222,18 +198,6 @@ ModelImporter:
     2300124: Murs_000
     2300126: Murs_009
     2300128: Sortie_001
-    2300130: Fenetres_001
-    2300132: Fenetres_003
-    2300134: Fenetres_004
-    2300136: Plancher_001
-    2300138: Fenetres_005
-    2300140: Fenetres_006
-    2300142: Fenetres_007
-    2300144: Fenetres_008
-    2300146: Portes_001
-    2300148: Tableau118
-    2300150: Tableau119
-    2300152: Tableau120
     3300000: Batiment
     3300002: Domotique
     3300004: sol__escaliers
@@ -299,18 +263,6 @@ ModelImporter:
     3300124: Murs_000
     3300126: Murs_009
     3300128: Sortie_001
-    3300130: Fenetres_001
-    3300132: Fenetres_003
-    3300134: Fenetres_004
-    3300136: Plancher_001
-    3300138: Fenetres_005
-    3300140: Fenetres_006
-    3300142: Fenetres_007
-    3300144: Fenetres_008
-    3300146: Portes_001
-    3300148: Tableau118
-    3300150: Tableau119
-    3300152: Tableau120
     4300000: SurfCurve_001
     4300002: SurfCurve_002
     4300004: SurfCurve
@@ -373,18 +325,6 @@ ModelImporter:
     4300118: Murs
     4300120: Murs_000
     4300122: Sortie_001
-    4300124: Fenetres_004
-    4300126: Plancher_001
-    4300128: Fenetres_003
-    4300130: Fenetres_001
-    4300132: Fenetres_005
-    4300134: Fenetres_008
-    4300136: Fenetres_007
-    4300138: Fenetres_006
-    4300140: Portes_001
-    4300142: Tableau120
-    4300144: Tableau119
-    4300146: Tableau118
     7400000: Default Take
     9500000: //RootNode
   materials:
