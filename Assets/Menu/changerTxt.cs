@@ -9,16 +9,16 @@ public class changerTxt : MonoBehaviour {
 
 	void Awake() {
 		guiText.material.color = CouleurSortie;
-		guiText.fontSize = TailleSortie;
+		guiText.fontSize = 5 * Screen.height / 100;
 	}
 
 	void OnMouseEnter() {
 		guiText.material.color = CouleurEntree;
-		guiText.fontSize = TailleEntrer;
+		guiText.fontSize = 10 * Screen.height / 100;
 	}
 
 	void OnMouseExit() {
 		guiText.material.color = CouleurSortie;
-		guiText.fontSize = TailleSortie;
+		guiText.fontSize = 5 * Screen.height / 100;
 	}
 }
