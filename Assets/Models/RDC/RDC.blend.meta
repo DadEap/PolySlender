@@ -56,6 +56,35 @@ ModelImporter:
     100100: Cylinder_004
     100102: Cylinder_006
     100104: Cylinder_005
+    100106: SolEscaliers
+    100108: BarrieresEscalierHall
+    100110: BarrieresEscalierAmphis
+    100112: BarrieresEscalierEntree
+    100114: BarrieresEscalierToilettes
+    100116: Murs
+    100118: PiliersRampe
+    100120: BaieVitreeCafetExterieur_001
+    100122: AmphiPascal
+    100124: AmphiTuring
+    100126: BarrieresRampe
+    100128: BU
+    100130: FenetreBabbage
+    100132: FenetreBDE
+    100134: Kfet
+    100136: Lovelace
+    100138: Porte
+    100140: Porte_001
+    100142: Porte_002
+    100144: Porte_003
+    100146: FenetreBDE_001
+    100148: Porte_004
+    100150: Porte_005
+    100152: PorteAscenseur
+    100154: FenetreLoge
+    100156: Barrieres
+    100158: Fenetres
+    100160: Piliers
+    100162: Portes
     400000: BaieVitree
     400002: BaieVitree_001
     400004: BaieVitree_002
@@ -109,6 +138,35 @@ ModelImporter:
     400100: Cylinder_004
     400102: Cylinder_006
     400104: Cylinder_005
+    400106: SolEscaliers
+    400108: BarrieresEscalierHall
+    400110: BarrieresEscalierAmphis
+    400112: BarrieresEscalierEntree
+    400114: BarrieresEscalierToilettes
+    400116: Murs
+    400118: PiliersRampe
+    400120: BaieVitreeCafetExterieur_001
+    400122: AmphiPascal
+    400124: AmphiTuring
+    400126: BarrieresRampe
+    400128: BU
+    400130: FenetreBabbage
+    400132: FenetreBDE
+    400134: Kfet
+    400136: Lovelace
+    400138: Porte
+    400140: Porte_001
+    400142: Porte_002
+    400144: Porte_003
+    400146: FenetreBDE_001
+    400148: Porte_004
+    400150: Porte_005
+    400152: PorteAscenseur
+    400154: FenetreLoge
+    400156: Barrieres
+    400158: Fenetres
+    400160: Piliers
+    400162: Portes
     2300000: BaieVitree
     2300002: BaieVitree_001
     2300004: BaieVitree_002
@@ -158,6 +216,37 @@ ModelImporter:
     2300092: Cylinder_004
     2300094: Cylinder_006
     2300096: Cylinder_005
+    2300098: BaieVitreeEntree
+    2300100: SolEscaliers
+    2300102: BarrieresEscalierHall
+    2300104: BaieVitreeLovelaceExterieur
+    2300106: BarrieresEscalierAmphis
+    2300108: BarrieresEscalierEntree
+    2300110: BarrieresEscalierToilettes
+    2300112: Murs
+    2300114: PiliersRampe
+    2300116: BaieVitreeCafetExterieur_001
+    2300118: AmphiPascal
+    2300120: AmphiTuring
+    2300122: BarrieresRampe
+    2300124: BU
+    2300126: FenetreBabbage
+    2300128: FenetreBDE
+    2300130: Kfet
+    2300132: Lovelace
+    2300134: Porte
+    2300136: Porte_001
+    2300138: Porte_002
+    2300140: Porte_003
+    2300142: FenetreBDE_001
+    2300144: Porte_004
+    2300146: Porte_005
+    2300148: PorteAscenseur
+    2300150: FenetreLoge
+    2300152: Barrieres
+    2300154: Fenetres
+    2300156: Piliers
+    2300158: Portes
     3300000: BaieVitree
     3300002: BaieVitree_001
     3300004: BaieVitree_002
@@ -207,6 +296,37 @@ ModelImporter:
     3300092: Cylinder_004
     3300094: Cylinder_006
     3300096: Cylinder_005
+    3300098: BaieVitreeEntree
+    3300100: SolEscaliers
+    3300102: BarrieresEscalierHall
+    3300104: BaieVitreeLovelaceExterieur
+    3300106: BarrieresEscalierAmphis
+    3300108: BarrieresEscalierEntree
+    3300110: BarrieresEscalierToilettes
+    3300112: Murs
+    3300114: PiliersRampe
+    3300116: BaieVitreeCafetExterieur_001
+    3300118: AmphiPascal
+    3300120: AmphiTuring
+    3300122: BarrieresRampe
+    3300124: BU
+    3300126: FenetreBabbage
+    3300128: FenetreBDE
+    3300130: Kfet
+    3300132: Lovelace
+    3300134: Porte
+    3300136: Porte_001
+    3300138: Porte_002
+    3300140: Porte_003
+    3300142: FenetreBDE_001
+    3300144: Porte_004
+    3300146: Porte_005
+    3300148: PorteAscenseur
+    3300150: FenetreLoge
+    3300152: Barrieres
+    3300154: Fenetres
+    3300156: Piliers
+    3300158: Portes
     4300000: Plane
     4300002: EscaliersHall
     4300004: BaieVitreeCafetExterieur
@@ -256,6 +376,37 @@ ModelImporter:
     4300092: Cylinder_003
     4300094: Cylinder_002
     4300096: Cylinder_005
+    4300098: SolEscaliers
+    4300100: BaieVitreeEntree
+    4300102: BarrieresEscalierHall
+    4300104: BarrieresEscalierAmphis
+    4300106: BarrieresEscalierToilettes
+    4300108: BarrieresEscalierEntree
+    4300110: BaieVitreeLovelaceExterieur
+    4300112: PiliersRampe
+    4300114: Murs
+    4300116: BaieVitreeCafetExterieur_001
+    4300118: AmphiPascal
+    4300120: AmphiTuring
+    4300122: FenetreBabbage
+    4300124: Porte_003
+    4300126: Porte_002
+    4300128: Porte_001
+    4300130: FenetreBDE
+    4300132: BarrieresRampe
+    4300134: BU
+    4300136: Lovelace
+    4300138: Kfet
+    4300140: Porte
+    4300142: Porte_005
+    4300144: FenetreBDE_001
+    4300146: PorteAscenseur
+    4300148: Porte_004
+    4300150: FenetreLoge
+    4300152: Portes
+    4300154: Fenetres
+    4300156: Barrieres
+    4300158: Piliers
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -293,7 +444,7 @@ ModelImporter:
   tangentSpace:
     normalSmoothAngle: 60
     splitTangentsAcrossUV: 1
-    normalImportMode: 0
+    normalImportMode: 1
     tangentImportMode: 1
   importAnimation: 1
   copyAvatar: 0
