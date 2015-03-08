@@ -2,32 +2,30 @@
 using System.Collections;
 
 public class SlenderSight : MonoBehaviour {
-
+	
 	public float fieldOfViewAngle = 175f;
 	public bool playerInSight;
 	public bool playerInRange;
+	public bool seenByPlayer;
 	public Vector3 lastViewToGo;
-	//private NavMeshAgent agent;
-	private SphereCollider sphereCol;
+	//private SphereCollider sphereCol;
 	private GameObject player;
-	// Use this for initialization
 	void Start () {
-	//	agent = GetComponent<NavMeshAgent> ();
-		sphereCol = GetComponent<SphereCollider> ();
+	//	sphereCol = GetComponent<SphereCollider> ();
 		player = GameObject.FindGameObjectWithTag ("Player");
-	
+		
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 		Vector3 direction = player.transform.position - transform.position;
 		float angle = Vector3.Angle(direction,transform.forward);
 		playerInSight = false;
-
+		seenByPlayer = false;
+		
 		if(angle < fieldOfViewAngle * 0.5f)
 		{
 			RaycastHit hit;
-			if(Physics.Raycast(transform.position,direction.normalized,out hit,sphereCol.radius))
+			if(Physics.Raycast(transform.position,direction.normalized,out hit))
 			{
 				if(hit.collider.gameObject == player)
 				{
@@ -36,8 +34,24 @@ public class SlenderSight : MonoBehaviour {
 				}
 			}
 		}
-	}
 
+		GameObject cam = GameObject.FindGameObjectWithTag ("MainCamera");
+		direction = transform.position - cam.transform.position;
+		angle = Vector3.Angle(direction,cam.transform.forward);
+		
+		if(angle < fieldOfViewAngle * 0.5f)
+		{
+			RaycastHit hit;
+			if(Physics.Raycast(cam.transform.position,direction.normalized,out hit))
+			{
+				if(hit.collider.gameObject == this.gameObject)
+				{
+					seenByPlayer = true;
+				}
+			}
+		}
+	}
+	
 	void OnTriggerStay(Collider other)
 	{
 		if (other.gameObject == player) 
@@ -45,13 +59,13 @@ public class SlenderSight : MonoBehaviour {
 			playerInRange = true;
 		}
 	}
-
+	
 	void OnTriggerExit (Collider other)
 	{
 		if (other.gameObject == player)
 		{
 			playerInRange = false;
-
+			
 		}
 	}
 }
