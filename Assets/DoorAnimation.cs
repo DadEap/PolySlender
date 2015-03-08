@@ -7,12 +7,16 @@ public class DoorAnimation : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		animator = GetComponent<Animator> ();
-		animator.SetBool ("Open", false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
+	}
+
+	void OnTriggerExit(Collider collider)
+	{
+		animator.SetBool ("Open", false);
 	}
 
 	void OnTriggerEnter(Collider collider)
