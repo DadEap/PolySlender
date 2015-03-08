@@ -7,14 +7,22 @@ public class FootStepsSound : MonoBehaviour {
 	public AudioClip[] woodSoundStep;
 	public AudioClip[] metalSoundStep;
 	public AudioClip[] terrainSoundStep;
+	public AudioClip breathless;
 	private CharacterController controller;
 	private CharacterMotor motor;
 	public float normalSpeed;
 	public float sprintSpeed;
 	public float delayBetweenStep;
+	public float delayBetweenBreathless;
+	public int maxEndurance;
+	public int perteEndurance;
+	public int gainEndurance;
 	private float nextPlay;
+	private float nextPlayBreathless;
 	private float delay;
 	private AudioClip step;
+	private int endurance;
+
 	
 	
 	// Use this for initialization
@@ -23,6 +31,7 @@ public class FootStepsSound : MonoBehaviour {
 		motor = GetComponent<CharacterMotor>();
 		controller = GetComponent<CharacterController>();
 		delay = delayBetweenStep;
+		endurance = 900;
 	}
 	
 	
@@ -55,21 +64,33 @@ public class FootStepsSound : MonoBehaviour {
 				audio.Play();
 			}
 		}
+
+		if ( (endurance == 0) & (Time.time > nextPlayBreathless) ) {
+			nextPlayBreathless = Time.time + delayBetweenBreathless;
+			audio.PlayOneShot (breathless);
+		}
 		
-		if (Input.GetKey(KeyCode.LeftShift))
+		if (Input.GetKey(KeyCode.LeftShift) && endurance >= perteEndurance)
 		{
 			motor.movement.maxForwardSpeed = sprintSpeed;
 			motor.movement.maxSidewaysSpeed = sprintSpeed;
 			motor.movement.maxBackwardsSpeed = sprintSpeed;
 			delayBetweenStep = delay/2;
+			endurance = endurance - perteEndurance;
+			return;
 		}
-		else
+		else 
 		{
 			motor.movement.maxForwardSpeed = normalSpeed;
 			motor.movement.maxSidewaysSpeed = normalSpeed;
 			motor.movement.maxBackwardsSpeed = normalSpeed;
 			delayBetweenStep = delay;
+			if (endurance < maxEndurance) {
+				endurance = endurance + gainEndurance;
+			}
 			return;
 		}
+
+
 	}
 }
