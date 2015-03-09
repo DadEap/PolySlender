@@ -80,6 +80,13 @@ ModelImporter:
     100148: Tableau118
     100150: Tableau119
     100152: Tableau120
+    100154: Cube
+    100156: Grille_000_LOD
+    100158: Grille_002_LOD
+    100160: Grille_007_LOD
+    100162: Grille_000_LOD_001
+    100164: Grille_002_LOD_001
+    100166: Grille_007_LOD_001
     400000: //RootNode
     400002: Batiment
     400004: Domotique
@@ -157,6 +164,13 @@ ModelImporter:
     400148: Tableau118
     400150: Tableau119
     400152: Tableau120
+    400154: Cube
+    400156: Grille_000_LOD
+    400158: Grille_002_LOD
+    400160: Grille_007_LOD
+    400162: Grille_000_LOD_001
+    400164: Grille_002_LOD_001
+    400166: Grille_007_LOD_001
     2300000: Batiment
     2300002: Domotique
     2300004: sol__escaliers
@@ -234,6 +248,13 @@ ModelImporter:
     2300148: Tableau118
     2300150: Tableau119
     2300152: Tableau120
+    2300154: Cube
+    2300156: Grille_000_LOD
+    2300158: Grille_002_LOD
+    2300160: Grille_007_LOD
+    2300162: Grille_000_LOD_001
+    2300164: Grille_002_LOD_001
+    2300166: Grille_007_LOD_001
     3300000: Batiment
     3300002: Domotique
     3300004: sol__escaliers
@@ -311,6 +332,13 @@ ModelImporter:
     3300148: Tableau118
     3300150: Tableau119
     3300152: Tableau120
+    3300154: Cube
+    3300156: Grille_000_LOD
+    3300158: Grille_002_LOD
+    3300160: Grille_007_LOD
+    3300162: Grille_000_LOD_001
+    3300164: Grille_002_LOD_001
+    3300166: Grille_007_LOD_001
     4300000: SurfCurve_001
     4300002: SurfCurve_002
     4300004: SurfCurve
@@ -385,6 +413,13 @@ ModelImporter:
     4300142: Tableau120
     4300144: Tableau119
     4300146: Tableau118
+    4300148: Cube
+    4300150: Grille_002_LOD
+    4300152: Grille_000_LOD
+    4300154: Grille_007_LOD
+    4300156: Grille_007_LOD_001
+    4300158: Grille_000_LOD_001
+    4300160: Grille_002_LOD_001
     7400000: Default Take
     9500000: //RootNode
   materials:

@@ -38,6 +38,7 @@ ModelImporter:
     2300016: Cylinder_011
     2300018: Cylinder_012
     2300020: Plane
+    2300022: //RootNode
     3300000: Cylinder
     3300002: Cylinder_001
     3300004: Cylinder_002
@@ -49,6 +50,7 @@ ModelImporter:
     3300016: Cylinder_011
     3300018: Cylinder_012
     3300020: Plane
+    3300022: //RootNode
     4300000: Cylinder_006
     4300006: Cylinder_002
     4300008: Cylinder_001

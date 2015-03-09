@@ -272,6 +272,43 @@ ModelImporter:
     100532: Support_Gauche_000
     100534: Cylinder_168
     100536: Support_Gauche_002
+    100538: Cube_052
+    100540: Cylinder_169
+    100542: Cylinder_170
+    100544: Cylinder_171
+    100546: Cylinder_172
+    100548: Cylinder_173
+    100550: Cylinder_174
+    100552: Cylinder_175
+    100554: Porte_Doctorants
+    100556: Porte_Doctorants2
+    100558: Porte_ES1
+    100560: Porte_ES10
+    100562: Porte_ES11
+    100564: Porte_ES12
+    100566: Porte_ES2
+    100568: Porte_ES3
+    100570: Porte_ES4
+    100572: Porte_ES5
+    100574: Porte_ES6
+    100576: Porte_ES7
+    100578: Porte_ES8
+    100580: Porte_ES9
+    100582: Porte_FOVA
+    100584: Porte_OC2
+    100586: Porte_SI
+    100588: Porte_SI2
+    100590: Porte_Toilette1
+    100592: Porte_Toilette2
+    100594: Porte_TPSysteme2
+    100596: Porte_Visio1
+    100598: Porte_Visio2
+    100600: Poteau_UnixB_01
+    100602: Poteau_UnixB_02
+    100604: Poteau_UnixB_03
+    100606: Poteau_UnixB_04
+    100608: Poteau_UnixB_05
+    100610: Sol_002
     400000: //RootNode
     400002: Cube
     400004: Cube_001
@@ -541,6 +578,43 @@ ModelImporter:
     400532: Support_Gauche_000
     400534: Cylinder_168
     400536: Support_Gauche_002
+    400538: Cube_052
+    400540: Cylinder_169
+    400542: Cylinder_170
+    400544: Cylinder_171
+    400546: Cylinder_172
+    400548: Cylinder_173
+    400550: Cylinder_174
+    400552: Cylinder_175
+    400554: Porte_Doctorants
+    400556: Porte_Doctorants2
+    400558: Porte_ES1
+    400560: Porte_ES10
+    400562: Porte_ES11
+    400564: Porte_ES12
+    400566: Porte_ES2
+    400568: Porte_ES3
+    400570: Porte_ES4
+    400572: Porte_ES5
+    400574: Porte_ES6
+    400576: Porte_ES7
+    400578: Porte_ES8
+    400580: Porte_ES9
+    400582: Porte_FOVA
+    400584: Porte_OC2
+    400586: Porte_SI
+    400588: Porte_SI2
+    400590: Porte_Toilette1
+    400592: Porte_Toilette2
+    400594: Porte_TPSysteme2
+    400596: Porte_Visio1
+    400598: Porte_Visio2
+    400600: Poteau_UnixB_01
+    400602: Poteau_UnixB_02
+    400604: Poteau_UnixB_03
+    400606: Poteau_UnixB_04
+    400608: Poteau_UnixB_05
+    400610: Sol_002
     2300000: Cube
     2300002: Cube_001
     2300004: Cube_002
@@ -778,6 +852,20 @@ ModelImporter:
     2300468: Support_Gauche_000
     2300470: Cylinder_168
     2300472: Support_Gauche_002
+    2300474: Cube_052
+    2300476: Cylinder_169
+    2300478: Cylinder_170
+    2300480: Cylinder_171
+    2300482: Cylinder_172
+    2300484: Cylinder_173
+    2300486: Cylinder_174
+    2300488: Cylinder_175
+    2300490: Poteau_UnixB_01
+    2300492: Poteau_UnixB_02
+    2300494: Poteau_UnixB_03
+    2300496: Poteau_UnixB_04
+    2300498: Poteau_UnixB_05
+    2300500: Sol_002
     3300000: Cube
     3300002: Cube_001
     3300004: Cube_002
@@ -1015,6 +1103,20 @@ ModelImporter:
     3300468: Support_Gauche_000
     3300470: Cylinder_168
     3300472: Support_Gauche_002
+    3300474: Cube_052
+    3300476: Cylinder_169
+    3300478: Cylinder_170
+    3300480: Cylinder_171
+    3300482: Cylinder_172
+    3300484: Cylinder_173
+    3300486: Cylinder_174
+    3300488: Cylinder_175
+    3300490: Poteau_UnixB_01
+    3300492: Poteau_UnixB_02
+    3300494: Poteau_UnixB_03
+    3300496: Poteau_UnixB_04
+    3300498: Poteau_UnixB_05
+    3300500: Sol_002
     4300000: Poteau_UnixA_05
     4300002: Poteau_UnixA_04
     4300004: Poteau_UnixA_03
@@ -1252,6 +1354,20 @@ ModelImporter:
     4300468: Support_Gauche_000
     4300470: Support_Gauche_002
     4300472: Cylinder_168
+    4300474: Poteau_UnixB_05
+    4300476: Poteau_UnixB_04
+    4300478: Poteau_UnixB_03
+    4300480: Poteau_UnixB_02
+    4300482: Poteau_UnixB_01
+    4300484: Cylinder_175
+    4300486: Sol_002
+    4300488: Cube_052
+    4300490: Cylinder_169
+    4300492: Cylinder_170
+    4300494: Cylinder_171
+    4300496: Cylinder_172
+    4300498: Cylinder_173
+    4300500: Cylinder_174
     7400000: Default Take
     9500000: //RootNode
   materials:
