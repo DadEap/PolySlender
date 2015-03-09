@@ -70,13 +70,14 @@ public class FootStepsSound : MonoBehaviour {
 			audio.PlayOneShot (breathless);
 		}
 		
-		if (Input.GetKey(KeyCode.LeftShift) && endurance >= perteEndurance)
+		if (Input.GetKey(KeyCode.LeftShift))
 		{
+			//nextPlayBreathless = Time.time + delayBetweenBreathless;
 			motor.movement.maxForwardSpeed = sprintSpeed;
 			motor.movement.maxSidewaysSpeed = sprintSpeed;
 			motor.movement.maxBackwardsSpeed = sprintSpeed;
 			delayBetweenStep = delay/2;
-			endurance = endurance - perteEndurance;
+			//endurance = endurance - perteEndurance;
 			return;
 		}
 		else 
@@ -85,9 +86,11 @@ public class FootStepsSound : MonoBehaviour {
 			motor.movement.maxSidewaysSpeed = normalSpeed;
 			motor.movement.maxBackwardsSpeed = normalSpeed;
 			delayBetweenStep = delay;
+			/*
 			if (endurance < maxEndurance) {
 				endurance = endurance + gainEndurance;
 			}
+			*/
 			return;
 		}
 
