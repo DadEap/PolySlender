@@ -82,8 +82,8 @@ public class GestionnaireObjets : MonoBehaviour {
 			Debug.Log ("L'objet " + objet.ToString () + " a été ramassé.");
 			// augmenter la difficulté
 			GameObject slender = GameObject.Find("slender");
-			((SlenderDeplacement) slender.GetComponent(SlenderDeplacement)).radius -= 15;
-			((SphereCollider) slender.GetComponent(SphereCollider)).radius += 10;
+			((SlenderDeplacement) slender.GetComponent("SlenderDeplacement")).radius -= 15;
+			((SphereCollider) slender.GetComponent("SphereCollider")).radius += 10;
 			// changer l'ambiance sonore
 			AudioSource ambiance = (AudioSource) instance.gameObject.GetComponent("AudioSource");
 			if (ambiance.clip != instance.ambiances[(listeObjets.Count-1)/2]){
