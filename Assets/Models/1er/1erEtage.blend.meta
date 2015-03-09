@@ -87,6 +87,42 @@ ModelImporter:
     100162: Grille_000_LOD_001
     100164: Grille_002_LOD_001
     100166: Grille_007_LOD_001
+    100168: Porte
+    100170: Porte_001
+    100172: Porte_002
+    100174: Porte_003
+    100176: Porte_004
+    100178: Porte_005
+    100180: Porte_006
+    100182: Porte_007
+    100184: Porte_008
+    100186: Porte_009
+    100188: Porte_010
+    100190: Porte_011
+    100192: Porte_012
+    100194: Porte_013
+    100196: Porte_014
+    100198: Porte_015
+    100200: Porte_016
+    100202: Porte_017
+    100204: Porte_018
+    100206: Porte_019
+    100208: Porte_020
+    100210: Porte_021
+    100212: Porte_022
+    100214: Porte_023
+    100216: Porte_024
+    100218: Porte_025
+    100220: Porte_026
+    100222: Porte_027
+    100224: Porte_028
+    100226: Porte_029
+    100228: Porte_030
+    100230: Porte_031
+    100232: Porte_032
+    100234: Porte_033
+    100236: Porte_034
+    100238: Porte_035
     400000: //RootNode
     400002: Batiment
     400004: Domotique
@@ -171,6 +207,42 @@ ModelImporter:
     400162: Grille_000_LOD_001
     400164: Grille_002_LOD_001
     400166: Grille_007_LOD_001
+    400168: Porte
+    400170: Porte_001
+    400172: Porte_002
+    400174: Porte_003
+    400176: Porte_004
+    400178: Porte_005
+    400180: Porte_006
+    400182: Porte_007
+    400184: Porte_008
+    400186: Porte_009
+    400188: Porte_010
+    400190: Porte_011
+    400192: Porte_012
+    400194: Porte_013
+    400196: Porte_014
+    400198: Porte_015
+    400200: Porte_016
+    400202: Porte_017
+    400204: Porte_018
+    400206: Porte_019
+    400208: Porte_020
+    400210: Porte_021
+    400212: Porte_022
+    400214: Porte_023
+    400216: Porte_024
+    400218: Porte_025
+    400220: Porte_026
+    400222: Porte_027
+    400224: Porte_028
+    400226: Porte_029
+    400228: Porte_030
+    400230: Porte_031
+    400232: Porte_032
+    400234: Porte_033
+    400236: Porte_034
+    400238: Porte_035
     2300000: Batiment
     2300002: Domotique
     2300004: sol__escaliers
@@ -255,6 +327,42 @@ ModelImporter:
     2300162: Grille_000_LOD_001
     2300164: Grille_002_LOD_001
     2300166: Grille_007_LOD_001
+    2300168: Porte
+    2300170: Porte_001
+    2300172: Porte_002
+    2300174: Porte_003
+    2300176: Porte_004
+    2300178: Porte_005
+    2300180: Porte_006
+    2300182: Porte_007
+    2300184: Porte_008
+    2300186: Porte_009
+    2300188: Porte_010
+    2300190: Porte_011
+    2300192: Porte_012
+    2300194: Porte_013
+    2300196: Porte_014
+    2300198: Porte_015
+    2300200: Porte_016
+    2300202: Porte_017
+    2300204: Porte_018
+    2300206: Porte_019
+    2300208: Porte_020
+    2300210: Porte_021
+    2300212: Porte_022
+    2300214: Porte_023
+    2300216: Porte_024
+    2300218: Porte_025
+    2300220: Porte_026
+    2300222: Porte_027
+    2300224: Porte_028
+    2300226: Porte_029
+    2300228: Porte_030
+    2300230: Porte_031
+    2300232: Porte_032
+    2300234: Porte_033
+    2300236: Porte_034
+    2300238: Porte_035
     3300000: Batiment
     3300002: Domotique
     3300004: sol__escaliers
@@ -339,6 +447,42 @@ ModelImporter:
     3300162: Grille_000_LOD_001
     3300164: Grille_002_LOD_001
     3300166: Grille_007_LOD_001
+    3300168: Porte
+    3300170: Porte_001
+    3300172: Porte_002
+    3300174: Porte_003
+    3300176: Porte_004
+    3300178: Porte_005
+    3300180: Porte_006
+    3300182: Porte_007
+    3300184: Porte_008
+    3300186: Porte_009
+    3300188: Porte_010
+    3300190: Porte_011
+    3300192: Porte_012
+    3300194: Porte_013
+    3300196: Porte_014
+    3300198: Porte_015
+    3300200: Porte_016
+    3300202: Porte_017
+    3300204: Porte_018
+    3300206: Porte_019
+    3300208: Porte_020
+    3300210: Porte_021
+    3300212: Porte_022
+    3300214: Porte_023
+    3300216: Porte_024
+    3300218: Porte_025
+    3300220: Porte_026
+    3300222: Porte_027
+    3300224: Porte_028
+    3300226: Porte_029
+    3300228: Porte_030
+    3300230: Porte_031
+    3300232: Porte_032
+    3300234: Porte_033
+    3300236: Porte_034
+    3300238: Porte_035
     4300000: SurfCurve_001
     4300002: SurfCurve_002
     4300004: SurfCurve
@@ -420,6 +564,42 @@ ModelImporter:
     4300156: Grille_007_LOD_001
     4300158: Grille_000_LOD_001
     4300160: Grille_002_LOD_001
+    4300162: Porte_021
+    4300164: Porte_020
+    4300166: Porte_019
+    4300168: Porte_018
+    4300170: Porte_017
+    4300172: Porte_016
+    4300174: Porte_015
+    4300176: Porte_014
+    4300178: Porte_013
+    4300180: Porte_012
+    4300182: Porte_011
+    4300184: Porte_010
+    4300186: Porte_009
+    4300188: Porte_008
+    4300190: Porte_007
+    4300192: Porte_006
+    4300194: Porte_005
+    4300196: Porte_004
+    4300198: Porte_003
+    4300200: Porte_002
+    4300202: Porte_001
+    4300204: Porte_035
+    4300206: Porte
+    4300208: Porte_034
+    4300210: Porte_033
+    4300212: Porte_032
+    4300214: Porte_031
+    4300216: Porte_030
+    4300218: Porte_029
+    4300220: Porte_028
+    4300222: Porte_027
+    4300224: Porte_026
+    4300226: Porte_025
+    4300228: Porte_024
+    4300230: Porte_023
+    4300232: Porte_022
     7400000: Default Take
     9500000: //RootNode
   materials:
