@@ -31,6 +31,7 @@ GameObject:
   - 81: {fileID: 8124380}
   - 114: {fileID: 11464614}
   - 82: {fileID: 8242186}
+  - 45: {fileID: 4570428}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -186,6 +187,14 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 124384}
   m_Mesh: {fileID: 10205, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!45 &4570428
+Skybox:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124380}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 5ba172cd3918d7c44aa6d04446119a00, type: 2}
 --- !u!54 &5424380
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -403,13 +412,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68ec2fe99d1108b9d0006a298d76c639, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axes: 0
+  axes: 1
   sensitivityX: 15
   sensitivityY: 15
   minimumX: -360
   maximumX: 360
-  minimumY: -75
-  maximumY: 65
+  minimumY: 0
+  maximumY: 0
 --- !u!114 &11464614
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -427,7 +436,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 124382}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2227d49c021b0d045a267b2b15195bf6, type: 3}
   m_Name: 
