@@ -4,7 +4,7 @@ using System.Collections;
 public class SlenderDeplacement : MonoBehaviour {
 	
 	public float radius;
-	public float distance;
+	public double distance;
 	private int timeWarping;
 	private int lifeWarping;
 	private NavMeshAgent agent;
@@ -28,6 +28,7 @@ public class SlenderDeplacement : MonoBehaviour {
 		slenderSight = GetComponent<SlenderSight> ();
 		agent = GetComponent<NavMeshAgent> ();
 		player = GameObject.FindGameObjectWithTag ("Player").transform;
+		distance = Mathf.Infinity;
 
 	}
 	
@@ -43,7 +44,7 @@ public class SlenderDeplacement : MonoBehaviour {
 		{
 			Killing();
 		}
-		if (slenderSight.seenByPlayer && slenderSight.playerInSight) 
+		else if (slenderSight.seenByPlayer && slenderSight.playerInSight) 
 		{
 			Waiting ();
 		}
@@ -121,21 +122,28 @@ public class SlenderDeplacement : MonoBehaviour {
 	{
 		agent.Stop();
 		lifeCompteur++;
+		distance = agent.remainingDistance;
 	}
 
 	void LookForPosition()
 	{
 		agent.transform.LookAt (player.transform.position);
-		distance = agent.remainingDistance;
+		//distance = agent.remainingDistance;
 	}
 
 	void Killing()
 	{
-		distance = 0;
+		distance = -1.0;
+		Debug.Log (distance);
 		target = player.forward *( (float)(2));
 		target += player.position;
 		NavMeshHit hit;
 		NavMesh.SamplePosition(target,out hit,radius,1);
 		agent.Warp(hit.position);
+	}
+
+	public double getDistance()
+	{
+		return distance;
 	}
 }
