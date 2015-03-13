@@ -35,6 +35,7 @@ public class vieJoueur : MonoBehaviour {
 	{
 		if (vie <= 0) 
 		{
+			GameObject.Find("Game Over").SetActive(true);
 			Time.timeScale = 0f; // Le temps s'arrete
 			isOver = true;
 		}
@@ -44,6 +45,7 @@ public class vieJoueur : MonoBehaviour {
 			if (dist < 0f) 
 			{
 				vie = vie - 100;
+
 			} 
 			else if (dist < 5f) 
 			{
@@ -66,7 +68,7 @@ public class vieJoueur : MonoBehaviour {
 			}
 		}
 	}
-
+	/*
 	void OnGui ()
 	{
 		if (isOver) 
@@ -78,6 +80,6 @@ public class vieJoueur : MonoBehaviour {
 			}
 
 		}
-	}
+	}*/
 	#endregion
 }
