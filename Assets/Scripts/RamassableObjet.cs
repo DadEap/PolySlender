@@ -17,6 +17,7 @@ public class RamassableObjet : MonoBehaviour {
 			GestionnaireObjets.ramasserObjet(type);
 			// détruire le gameobject lorsque le son a fini de jouer
 			Destroy(this.gameObject, bruitPage.clip.length );
+			AfficherTexte.Afficher("Vous avez ramassé l'objet "+type);
 		}
 	}
 }
