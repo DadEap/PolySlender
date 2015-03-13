@@ -1,7 +1,7 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
-public class NormaleDoorAnimation : MonoBehaviour {
+public class BadgeDoorAnimation : MonoBehaviour {
 	private Animator anim;
 
 	// Use this for initialization
@@ -11,7 +11,8 @@ public class NormaleDoorAnimation : MonoBehaviour {
 
 	void OnTriggerEnter(Collider collider)
 	{
-		anim.Play ("Armature|Open");
+		if (collider.tag == "Player" && GestionnaireObjets.possedeObjet(GestionnaireObjets.Ramassable.CarteEtudiant))
+			anim.Play ("Armature|Open");
 	}
 
 	void OnTriggerExit(Collider collider)
