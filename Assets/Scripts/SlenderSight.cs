@@ -21,26 +21,27 @@ public class SlenderSight : MonoBehaviour {
 		playerInSight = false;
 		seenByPlayer = false;
 		
-		if(angle < fieldOfViewAngle * 0.5f && Vector3.Distance(player.transform.position,transform.position) < 20)
+		if(angle < fieldOfViewAngle * 0.5f)
 		{
-			playerInSight = true;
+			RaycastHit hit;
+			if(Physics.Raycast(player.transform.position,direction.normalized,out hit,20))
+			{
+				if(hit.collider.gameObject == player)
+				{
+					playerInSight = true;
+				}
+			}
 		}
 
 		GameObject cam = GameObject.FindGameObjectWithTag ("MainCamera");
 		direction = transform.position - cam.transform.position;
 		angle = Vector3.Angle(direction,cam.transform.forward);
 		
-		if(angle < cam.camera.fieldOfView * 0.5f)
+		if((angle < cam.camera.fieldOfView) && Vector3.Distance(cam.transform.position,transform.position) < 20)
 		{
-			RaycastHit hit;
-			if(Physics.Raycast(cam.transform.position,direction.normalized,out hit,20))
-			{
-				if(hit.collider.gameObject == this.gameObject)
-				{
-					seenByPlayer = true;
-				}
-			}
+			seenByPlayer = true;
 		}
+
 	}
 	
 	void OnTriggerStay(Collider other)

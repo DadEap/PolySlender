@@ -35,10 +35,7 @@ public class SlenderDeplacement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (slenderSight.playerInRange)
-		{
-			LookForPosition();
-		}
+
 
 		if(lifeCompteur > lifeWarping)
 		{
@@ -48,7 +45,7 @@ public class SlenderDeplacement : MonoBehaviour {
 		{
 			Waiting ();
 		}
-		else if (slenderSight.playerInSight) {
+		else if (slenderSight.playerInSight || slenderSight.playerInRange) {
 			Chasing ();
 		}  
 		else 
@@ -73,6 +70,9 @@ public class SlenderDeplacement : MonoBehaviour {
 		else
 			Warping();
 
+		if (!slenderSight.playerInSight)
+						distance = Mathf.Infinity;
+
 	}
 
 	void Warping()
@@ -96,7 +96,7 @@ public class SlenderDeplacement : MonoBehaviour {
 			Vector3 direction = hit.position - cam.transform.position;
 			float angle = Vector3.Angle(direction,cam.transform.forward);
 			
-			if((angle < cam.camera.fieldOfView * 0.5f) && Vector3.Distance(cam.transform.position,hit.position) < 20)
+			if((angle < cam.camera.fieldOfView) && Vector3.Distance(cam.transform.position,hit.position) < 20)
 			{
 				canWarp = false;
 			}
@@ -113,14 +113,14 @@ public class SlenderDeplacement : MonoBehaviour {
 	void Waiting ()
 	{
 		agent.Stop();
-		if(slenderSight.seenByPlayer)
+		if(slenderSight.playerInSight)
 			lifeCompteur++;
 		distance = agent.remainingDistance;
 	}
 
 	void LookForPosition()
 	{
-		agent.transform.LookAt (player.transform.position);
+		agent.SetDestination(player.transform.position);
 		//distance = agent.remainingDistance;
 	}
 
