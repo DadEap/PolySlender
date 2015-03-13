@@ -272,6 +272,19 @@ ModelImporter:
     100532: Support_Gauche_000
     100534: Cylinder_168
     100536: Support_Gauche_002
+    100538: Poteau_UnixB_01
+    100540: Poteau_UnixB_02
+    100542: Poteau_UnixB_03
+    100544: Poteau_UnixB_04
+    100546: Poteau_UnixB_05
+    100548: Sol_002
+    100550: Support_Gauche_004
+    100552: LecteurCarte
+    100554: LecteurCarte_001
+    100556: LecteurCarte_002
+    100558: LecteurCarte_003
+    100560: LecteurCarte_004
+    100562: LecteurCarte_005
     400000: //RootNode
     400002: Cube
     400004: Cube_001
@@ -541,6 +554,19 @@ ModelImporter:
     400532: Support_Gauche_000
     400534: Cylinder_168
     400536: Support_Gauche_002
+    400538: Poteau_UnixB_01
+    400540: Poteau_UnixB_02
+    400542: Poteau_UnixB_03
+    400544: Poteau_UnixB_04
+    400546: Poteau_UnixB_05
+    400548: Sol_002
+    400550: Support_Gauche_004
+    400552: LecteurCarte
+    400554: LecteurCarte_001
+    400556: LecteurCarte_002
+    400558: LecteurCarte_003
+    400560: LecteurCarte_004
+    400562: LecteurCarte_005
     2300000: Cube
     2300002: Cube_001
     2300004: Cube_002
@@ -778,6 +804,19 @@ ModelImporter:
     2300468: Support_Gauche_000
     2300470: Cylinder_168
     2300472: Support_Gauche_002
+    2300474: Poteau_UnixB_01
+    2300476: Poteau_UnixB_02
+    2300478: Poteau_UnixB_03
+    2300480: Poteau_UnixB_04
+    2300482: Poteau_UnixB_05
+    2300484: Sol_002
+    2300486: Support_Gauche_004
+    2300488: LecteurCarte
+    2300490: LecteurCarte_001
+    2300492: LecteurCarte_002
+    2300494: LecteurCarte_003
+    2300496: LecteurCarte_004
+    2300498: LecteurCarte_005
     3300000: Cube
     3300002: Cube_001
     3300004: Cube_002
@@ -1015,6 +1054,19 @@ ModelImporter:
     3300468: Support_Gauche_000
     3300470: Cylinder_168
     3300472: Support_Gauche_002
+    3300474: Poteau_UnixB_01
+    3300476: Poteau_UnixB_02
+    3300478: Poteau_UnixB_03
+    3300480: Poteau_UnixB_04
+    3300482: Poteau_UnixB_05
+    3300484: Sol_002
+    3300486: Support_Gauche_004
+    3300488: LecteurCarte
+    3300490: LecteurCarte_001
+    3300492: LecteurCarte_002
+    3300494: LecteurCarte_003
+    3300496: LecteurCarte_004
+    3300498: LecteurCarte_005
     4300000: Poteau_UnixA_05
     4300002: Poteau_UnixA_04
     4300004: Poteau_UnixA_03
@@ -1252,6 +1304,19 @@ ModelImporter:
     4300468: Support_Gauche_000
     4300470: Support_Gauche_002
     4300472: Cylinder_168
+    4300474: Poteau_UnixB_05
+    4300476: Poteau_UnixB_04
+    4300478: Poteau_UnixB_03
+    4300480: Poteau_UnixB_02
+    4300482: Poteau_UnixB_01
+    4300484: Support_Gauche_004
+    4300486: Sol_002
+    4300488: LecteurCarte_005
+    4300490: LecteurCarte_004
+    4300492: LecteurCarte_003
+    4300494: LecteurCarte_002
+    4300496: LecteurCarte_001
+    4300498: LecteurCarte
     7400000: Default Take
     9500000: //RootNode
   materials:
