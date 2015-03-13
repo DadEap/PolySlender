@@ -8,7 +8,7 @@ public class vieJoueur : MonoBehaviour {
 	#region Attributs
 
 	public float vie; 
-	public double dist;
+	public float dist;
 	private bool isOver;
 	private GameObject slender;
 
@@ -43,26 +43,26 @@ public class vieJoueur : MonoBehaviour {
 			dist = ((SlenderDeplacement)slender.GetComponent ("SlenderDeplacement")).getDistance ();
 			if (dist < 0f) 
 			{
-				vie = vie - 100;
+				vie = vie - 100f;
 			} 
 			else if (dist < 5f) 
 			{
-				vie = vie - 1;
+				vie = vie - 1f;
 			} 
 			else  if (dist < 10f) 
 			{
-				vie = vie - 0.5f;
-			} 
-			else if (vie < 15f) 
-			{
 				vie = vie - 0.1f;
+			} 
+			else if (dist < 15f) 
+			{
+				vie = vie - 0.01f;
 			} 
 			else 
 			{
-				if (vie < 100)
-					vie += 5;
-				if (vie >= 100)
-					vie = 100;
+				if (vie < 100f)
+					vie += 0.5f;
+				if (vie >= 100f)
+					vie = 100f;
 			}
 		}
 	}
