@@ -9,6 +9,7 @@ public class vieJoueur : MonoBehaviour {
 
 	public float vie; 
 	public double dist;
+	public GameObject gameOver; // l'objet (prefab) à instancier lors du Game Over
 	private GameObject slender;
 
 	#endregion
@@ -34,10 +35,11 @@ public class vieJoueur : MonoBehaviour {
 		//Debug.Log (vie);
 		if (vie <= 0) 
 		{
-			// impossible d'utiliser ce code car lorsque GameOver est désactivé, Find() ne le trouve pas
-			// GameObject.Find("GameOver").SetActive(true);
-			// je vais modifier cette partie du code pour l'animation de Game Over
-			Time.timeScale = 0f; // Le temps s'arrete
+			// déclenchement du Game Over :
+			Instantiate(gameOver, Vector3.zero, Quaternion.identity);
+			// la condition d'arret du jeu est atteinte, on se débarrasse donc de ce script
+			// cela évite de créer en boucle des GameOver
+			Destroy(this);
 		}
 		else
 		{
@@ -50,7 +52,7 @@ public class vieJoueur : MonoBehaviour {
 			} 
 			else if (dist < 5f) 
 			{
-				vie = vie - 10f*Time.deltaTime;
+				vie = vie - 20f*Time.deltaTime;
 			} 
 			else  if (dist < 10f) 
 			{
