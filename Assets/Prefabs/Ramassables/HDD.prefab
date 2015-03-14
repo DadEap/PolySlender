@@ -10,7 +10,6 @@ GameObject:
   - 4: {fileID: 448468}
   - 33: {fileID: 3348468}
   - 23: {fileID: 2348468}
-  - 95: {fileID: 9548468}
   - 82: {fileID: 8229662}
   - 114: {fileID: 11429662}
   - 65: {fileID: 6529662}
@@ -82,7 +81,7 @@ AudioSource:
   m_GameObject: {fileID: 148468}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8f627017f1ca8ea429010764f5599374, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -132,21 +131,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!95 &9548468
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 148468}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 42df76e6edfeab642a695d884273397d, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11429662
 MonoBehaviour:
   m_ObjectHideFlags: 1
