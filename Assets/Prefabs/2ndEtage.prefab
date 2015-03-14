@@ -7707,7 +7707,25 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 0
+  m_IsActive: 1
+--- !u!1 &149632
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 449632}
+  - 33: {fileID: 3349632}
+  - 64: {fileID: 6449632}
+  - 23: {fileID: 2349632}
+  m_Layer: 0
+  m_Name: RampeEscalierToit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &152228
 GameObject:
   m_ObjectHideFlags: 0
@@ -30515,6 +30533,18 @@ Transform:
   - {fileID: 452228}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!4 &449632
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149632}
+  m_LocalRotation: {x: .963190913, y: -6.42059064e-08, z: .268818438, w: -5.41282752e-08}
+  m_LocalPosition: {x: -43.7039986, y: 13.1000004, z: .708000004}
+  m_LocalScale: {x: 2.56052732, y: 1.37001932, z: 1}
+  m_Children: []
+  m_Father: {fileID: 465498}
+  m_RootOrder: 0
 --- !u!4 &452228
 Transform:
   m_ObjectHideFlags: 1
@@ -35348,7 +35378,8 @@ Transform:
   m_LocalRotation: {x: -.707106888, y: 0, z: 0, w: .707106769}
   m_LocalPosition: {x: -1.27881598, y: 6.50000238, z: .00177122548}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 449632}
   m_Father: {fileID: 452228}
   m_RootOrder: 24
 --- !u!4 &482734
@@ -48794,6 +48825,26 @@ Renderer:
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
   - {fileID: 2100000, guid: 6614bbd0ad9bcd1488427f1b6b228378, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!23 &2349632
+Renderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149632}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -65407,6 +65458,13 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 123744}
   m_Mesh: {fileID: 4300014, guid: e74889a6ee8b24b6d8f1b46bf00ed4a8, type: 3}
+--- !u!33 &3349632
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149632}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &3352230
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -80947,6 +81005,19 @@ MeshCollider:
   m_SmoothSphereCollisions: 0
   m_Convex: 0
   m_Mesh: {fileID: 0}
+--- !u!64 &6449632
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149632}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!64 &6452230
 MeshCollider:
   m_ObjectHideFlags: 1
