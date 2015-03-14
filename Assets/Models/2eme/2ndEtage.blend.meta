@@ -285,6 +285,8 @@ ModelImporter:
     100558: LecteurCarte_003
     100560: LecteurCarte_004
     100562: LecteurCarte_005
+    100564: Fenetres_000
+    100566: Atrium
     400000: //RootNode
     400002: Cube
     400004: Cube_001
@@ -567,6 +569,8 @@ ModelImporter:
     400558: LecteurCarte_003
     400560: LecteurCarte_004
     400562: LecteurCarte_005
+    400564: Fenetres_000
+    400566: Atrium
     2300000: Cube
     2300002: Cube_001
     2300004: Cube_002
@@ -817,6 +821,8 @@ ModelImporter:
     2300494: LecteurCarte_003
     2300496: LecteurCarte_004
     2300498: LecteurCarte_005
+    2300500: Fenetres_000
+    2300502: Atrium
     3300000: Cube
     3300002: Cube_001
     3300004: Cube_002
@@ -1067,6 +1073,8 @@ ModelImporter:
     3300494: LecteurCarte_003
     3300496: LecteurCarte_004
     3300498: LecteurCarte_005
+    3300500: Fenetres_000
+    3300502: Atrium
     4300000: Poteau_UnixA_05
     4300002: Poteau_UnixA_04
     4300004: Poteau_UnixA_03
@@ -1317,6 +1325,8 @@ ModelImporter:
     4300494: LecteurCarte_002
     4300496: LecteurCarte_001
     4300498: LecteurCarte
+    4300500: Fenetres_000
+    4300502: Atrium
     7400000: Default Take
     9500000: //RootNode
   materials:
