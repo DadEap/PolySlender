@@ -16,7 +16,10 @@ public class GestionnaireObjets : MonoBehaviour {
 		Conventions,
 		Certificat,
 		Bulletin,
-		Ventoline
+		Ventoline,
+		GameboyColor,
+		bag,
+		HDD
 	}
 
 	public List<GameObject> ramassables; // affecté dans l'éditeur
