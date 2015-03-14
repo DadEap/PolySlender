@@ -11,9 +11,7 @@ public class SlenderDeplacement : MonoBehaviour {
 	private int timeCompteur;
 	private int lifeCompteur;
 	private Vector3 target;
-	private bool hasSeen;
 	private Transform player;
-	private int showCompteur = 50;
 
 	private SlenderSight slenderSight;
 	// Use this for initialization
@@ -24,7 +22,6 @@ public class SlenderDeplacement : MonoBehaviour {
 		radius = 70;
 		timeCompteur = 0;
 		timeWarping = 100;
-		hasSeen = false;
 		slenderSight = GetComponent<SlenderSight> ();
 		agent = GetComponent<NavMeshAgent> ();
 		player = GameObject.FindGameObjectWithTag ("Player").transform;
@@ -34,8 +31,6 @@ public class SlenderDeplacement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-
 
 		if(lifeCompteur > lifeWarping)
 		{
@@ -60,11 +55,10 @@ public class SlenderDeplacement : MonoBehaviour {
 		NavMeshPath path = new NavMeshPath();
 		NavMesh.SamplePosition(player.position,out hit,radius,1);
 		agent.CalculatePath (hit.position, path);
+		Debug.Log (path.status);
 		if(path.status == NavMeshPathStatus.PathComplete)
 		{
-			Debug.Log("true");
 			agent.SetDestination(hit.position);
-			hasSeen = true;
 			distance = agent.remainingDistance;
 		}
 		else
@@ -93,10 +87,10 @@ public class SlenderDeplacement : MonoBehaviour {
 			NavMesh.SamplePosition(target,out hit,radius,1);
 
 			GameObject cam = GameObject.FindGameObjectWithTag ("MainCamera");
-			Vector3 direction = hit.position - cam.transform.position;
-			float angle = Vector3.Angle(direction,cam.transform.forward);
+			Vector3 direction = (hit.position - cam.transform.position).normalized;
+			float dot = Vector3.Dot(cam.transform.forward,direction);
 			
-			if((angle < cam.camera.fieldOfView) && Vector3.Distance(cam.transform.position,hit.position) < 20)
+			if(slenderSight.isVisible(cam.transform,hit.position))
 			{
 				canWarp = false;
 			}
@@ -120,7 +114,7 @@ public class SlenderDeplacement : MonoBehaviour {
 
 	void LookForPosition()
 	{
-		agent.SetDestination(player.transform.position);
+		transform.LookAt(player.transform.position);
 		//distance = agent.remainingDistance;
 	}
 

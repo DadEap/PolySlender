@@ -35,7 +35,8 @@ public class vieJoueur : MonoBehaviour {
 	{
 		if (vie <= 0) 
 		{
-			GameObject.Find("GameOver").SetActive(true);
+			GameObject over = GameObject.Find("GameOver");
+			over.SetActive(true);
 			Time.timeScale = 0f; // Le temps s'arrete
 			isOver = true;
 		}
