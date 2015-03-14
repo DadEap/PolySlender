@@ -4,8 +4,8 @@ using System.Collections;
 public class SlenderDeplacement : MonoBehaviour {
 	
 	public float radius;
-	public double distance;
-	private int timeWarping;
+	public int timeWarping;
+	private float distance;
 	private int lifeWarping;
 	private NavMeshAgent agent;
 	private int timeCompteur;
@@ -21,7 +21,7 @@ public class SlenderDeplacement : MonoBehaviour {
 
 		lifeWarping = 500;
 		lifeCompteur = 0;
-		radius = 20;
+		radius = 70;
 		timeCompteur = 0;
 		timeWarping = 100;
 		hasSeen = false;
@@ -35,20 +35,17 @@ public class SlenderDeplacement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (slenderSight.playerInRange)
-		{
-			LookForPosition();
-		}
+
 
 		if(lifeCompteur > lifeWarping)
 		{
 			Killing();
 		}
-		else if (slenderSight.seenByPlayer && slenderSight.playerInSight) 
+		else if ( slenderSight.seenByPlayer) 
 		{
 			Waiting ();
 		}
-		else if (slenderSight.playerInSight) {
+		else if (slenderSight.playerInSight || slenderSight.playerInRange) {
 			Chasing ();
 		}  
 		else 
@@ -59,14 +56,23 @@ public class SlenderDeplacement : MonoBehaviour {
 
 	void Chasing()
 	{
-		if (showCompteur == 0) 
+		NavMeshHit hit;
+		NavMeshPath path = new NavMeshPath();
+		NavMesh.SamplePosition(player.position,out hit,radius,1);
+		agent.CalculatePath (hit.position, path);
+		if(path.status == NavMeshPathStatus.PathComplete)
 		{
-			showCompteur = 50;
+			Debug.Log("true");
+			agent.SetDestination(hit.position);
+			hasSeen = true;
+			distance = agent.remainingDistance;
 		}
-		agent.SetDestination (player.position);
-		hasSeen = true;
-		showCompteur--;
-		distance = agent.remainingDistance;
+		else
+			Warping();
+
+		if (!slenderSight.playerInSight)
+						distance = Mathf.Infinity;
+
 	}
 
 	void Warping()
@@ -76,20 +82,13 @@ public class SlenderDeplacement : MonoBehaviour {
 		lifeCompteur = 0;
 		if(timeCompteur == 0)
 		{
-			if(hasSeen)
-			{
-				//target = slenderSight.lastViewToGo;
-				hasSeen = false;
-			}
-			else
-			{
-				target = Random.insideUnitSphere;
-				if(target.x*radius < 8 && target.y*radius < 8 && target.z*radius < 8)
-					return;
 
-				target *= radius;
-				target += player.position;
-			}
+			target = Random.insideUnitSphere;
+			if(target.x*radius < 8 && target.y*radius < 8 && target.z*radius < 8)
+				return;
+
+			target *= radius;
+			target += player.position;
 			NavMeshHit hit;
 			NavMesh.SamplePosition(target,out hit,radius,1);
 
@@ -97,16 +96,9 @@ public class SlenderDeplacement : MonoBehaviour {
 			Vector3 direction = hit.position - cam.transform.position;
 			float angle = Vector3.Angle(direction,cam.transform.forward);
 			
-			if(angle < 175f * 0.5f)
+			if((angle < cam.camera.fieldOfView) && Vector3.Distance(cam.transform.position,hit.position) < 20)
 			{
-				RaycastHit rayHit;
-				if(Physics.Raycast(cam.transform.position,direction.normalized,out rayHit))
-				{
-					if(rayHit.collider.gameObject == this.gameObject)
-					{
-						canWarp = false;
-					}
-				}
+				canWarp = false;
 			}
 			if(canWarp)
 				agent.Warp(hit.position);			
@@ -121,19 +113,20 @@ public class SlenderDeplacement : MonoBehaviour {
 	void Waiting ()
 	{
 		agent.Stop();
-		lifeCompteur++;
+		if(slenderSight.playerInSight)
+			lifeCompteur++;
 		distance = agent.remainingDistance;
 	}
 
 	void LookForPosition()
 	{
-		agent.transform.LookAt (player.transform.position);
+		agent.SetDestination(player.transform.position);
 		//distance = agent.remainingDistance;
 	}
 
 	void Killing()
 	{
-		distance = -1.0;
+		distance = -1.0f;
 		Debug.Log (distance);
 		target = player.forward *( (float)(2));
 		target += player.position;
@@ -142,7 +135,7 @@ public class SlenderDeplacement : MonoBehaviour {
 		agent.Warp(hit.position);
 	}
 
-	public double getDistance()
+	public float getDistance()
 	{
 		return distance;
 	}

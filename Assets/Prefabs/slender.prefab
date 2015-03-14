@@ -822,7 +822,6 @@ MonoBehaviour:
   playerInSight: 0
   playerInRange: 0
   seenByPlayer: 0
-  lastViewToGo: {x: 0, y: 0, z: 0}
 --- !u!114 &11496924
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -835,7 +834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0
-  speed: 0
+  timeWarping: 0
 --- !u!135 &13596924
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -930,7 +929,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 138768}
   m_Enabled: 1
   m_Radius: .5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

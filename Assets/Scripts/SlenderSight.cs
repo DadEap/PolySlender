@@ -3,16 +3,15 @@ using System.Collections;
 
 public class SlenderSight : MonoBehaviour {
 	
-	public float fieldOfViewAngle = 175f;
+	public float fieldOfViewAngle;
 	public bool playerInSight;
 	public bool playerInRange;
 	public bool seenByPlayer;
-	public Vector3 lastViewToGo;
-	//private SphereCollider sphereCol;
 	private GameObject player;
 	void Start () {
 	//	sphereCol = GetComponent<SphereCollider> ();
 		player = GameObject.FindGameObjectWithTag ("Player");
+		fieldOfViewAngle = 120f;
 		
 	}
 
@@ -25,12 +24,11 @@ public class SlenderSight : MonoBehaviour {
 		if(angle < fieldOfViewAngle * 0.5f)
 		{
 			RaycastHit hit;
-			if(Physics.Raycast(transform.position,direction.normalized,out hit))
+			if(Physics.Raycast(player.transform.position,direction.normalized,out hit,20))
 			{
 				if(hit.collider.gameObject == player)
 				{
 					playerInSight = true;
-					lastViewToGo = player.transform.position;
 				}
 			}
 		}
@@ -39,17 +37,11 @@ public class SlenderSight : MonoBehaviour {
 		direction = transform.position - cam.transform.position;
 		angle = Vector3.Angle(direction,cam.transform.forward);
 		
-		if(angle < fieldOfViewAngle * 0.5f)
+		if((angle < cam.camera.fieldOfView) && Vector3.Distance(cam.transform.position,transform.position) < 20)
 		{
-			RaycastHit hit;
-			if(Physics.Raycast(cam.transform.position,direction.normalized,out hit))
-			{
-				if(hit.collider.gameObject == this.gameObject)
-				{
-					seenByPlayer = true;
-				}
-			}
+			seenByPlayer = true;
 		}
+
 	}
 	
 	void OnTriggerStay(Collider other)
@@ -67,5 +59,11 @@ public class SlenderSight : MonoBehaviour {
 			playerInRange = false;
 			
 		}
+	}
+
+	bool isVisible(GameObject origin,GameObject target)
+	{
+		Vector3 eyesOrigin = origin.transform.position;
+		return true;
 	}
 }

@@ -35,6 +35,7 @@ public class vieJoueur : MonoBehaviour {
 	{
 		if (vie <= 0) 
 		{
+			GameObject.Find("GameOver").SetActive(true);
 			Time.timeScale = 0f; // Le temps s'arrete
 			isOver = true;
 		}
@@ -44,29 +45,30 @@ public class vieJoueur : MonoBehaviour {
 			if (dist < 0f) 
 			{
 				vie = vie - 100;
+
 			} 
 			else if (dist < 5f) 
 			{
-				vie = vie - 1;
+				vie = vie - 0.1f;
 			} 
 			else  if (dist < 10f) 
 			{
-				vie = vie - 0.5f;
+				vie = vie - 0.05f;
 			} 
 			else if (vie < 15f) 
 			{
-				vie = vie - 0.1f;
+				vie = vie - 0.01f;
 			} 
 			else 
 			{
 				if (vie < 100)
-					vie += 5;
+					vie += 0.5f;
 				if (vie >= 100)
 					vie = 100;
 			}
 		}
 	}
-
+	/*
 	void OnGui ()
 	{
 		if (isOver) 
@@ -78,6 +80,6 @@ public class vieJoueur : MonoBehaviour {
 			}
 
 		}
-	}
+	}*/
 	#endregion
 }

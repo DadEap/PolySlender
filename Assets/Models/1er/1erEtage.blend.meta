@@ -123,6 +123,9 @@ ModelImporter:
     100234: Porte_033
     100236: Porte_034
     100238: Porte_035
+    100240: LecteurCarte
+    100242: LecteurCarte_001
+    100244: LecteurCarte_002
     400000: //RootNode
     400002: Batiment
     400004: Domotique
@@ -243,6 +246,9 @@ ModelImporter:
     400234: Porte_033
     400236: Porte_034
     400238: Porte_035
+    400240: LecteurCarte
+    400242: LecteurCarte_001
+    400244: LecteurCarte_002
     2300000: Batiment
     2300002: Domotique
     2300004: sol__escaliers
@@ -363,6 +369,9 @@ ModelImporter:
     2300234: Porte_033
     2300236: Porte_034
     2300238: Porte_035
+    2300240: LecteurCarte
+    2300242: LecteurCarte_001
+    2300244: LecteurCarte_002
     3300000: Batiment
     3300002: Domotique
     3300004: sol__escaliers
@@ -483,6 +492,9 @@ ModelImporter:
     3300234: Porte_033
     3300236: Porte_034
     3300238: Porte_035
+    3300240: LecteurCarte
+    3300242: LecteurCarte_001
+    3300244: LecteurCarte_002
     4300000: SurfCurve_001
     4300002: SurfCurve_002
     4300004: SurfCurve
@@ -600,6 +612,9 @@ ModelImporter:
     4300228: Porte_024
     4300230: Porte_023
     4300232: Porte_022
+    4300234: LecteurCarte_002
+    4300236: LecteurCarte_001
+    4300240: LecteurCarte
     7400000: Default Take
     9500000: //RootNode
   materials:

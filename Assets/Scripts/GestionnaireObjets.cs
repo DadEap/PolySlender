@@ -14,7 +14,9 @@ public class GestionnaireObjets : MonoBehaviour {
 		CarteEtudiant,
 		TOEIC,
 		Conventions,
-		Certificat
+		Certificat,
+		Bulletin,
+		Ventoline
 	}
 
 	public List<GameObject> ramassables; // affecté dans l'éditeur
@@ -79,15 +81,15 @@ public class GestionnaireObjets : MonoBehaviour {
 		} else {
 			// ajouter l'obj à l'inventaire
 			listeObjets.Add (objet);
-			Debug.Log ("L'objet " + objet.ToString () + " a été ramassé.");
+			//Debug.Log ("L'objet " + objet.ToString () + " a été ramassé.");
 			// augmenter la difficulté
 			GameObject slender = GameObject.Find("slender");
 			((SlenderDeplacement) slender.GetComponent("SlenderDeplacement")).radius -= 15;
-			((SphereCollider) slender.GetComponent("SphereCollider")).radius += 10;
+			((SphereCollider) slender.GetComponent("SphereCollider")).radius += 5;
+			((SlenderDeplacement) slender.GetComponent("SlenderDeplacement")).timeWarping -= 10;
 			// changer l'ambiance sonore
 			AudioSource ambiance = (AudioSource) instance.gameObject.GetComponent("AudioSource");
 			if (ambiance.clip != instance.ambiances[(listeObjets.Count-1)/2]){
-				Debug.Log("playing sound n°"+(listeObjets.Count-1)/2);
 				ambiance.clip = instance.ambiances[(listeObjets.Count-1)/2];
 				ambiance.Play();
 			}
