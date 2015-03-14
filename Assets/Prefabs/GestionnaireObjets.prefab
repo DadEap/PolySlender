@@ -56,7 +56,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 460594}
   m_Layer: 0
-  m_Name: SpawnBU
+  m_Name: SpawnImg
   m_TagString: ObjectSpawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87,6 +87,51 @@ GameObject:
   - 4: {fileID: 460598}
   m_Layer: 0
   m_Name: SpawnVNeuman
+  m_TagString: ObjectSpawn
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &194586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 494586}
+  m_Layer: 0
+  m_Name: SpawnBU
+  m_TagString: ObjectSpawn
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &194588
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 494588}
+  m_Layer: 0
+  m_Name: SpawnTPSys
+  m_TagString: ObjectSpawn
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &194590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 494590}
+  m_Layer: 0
+  m_Name: SpawnProf
   m_TagString: ObjectSpawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -126,11 +171,14 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 460594}
+  - {fileID: 494586}
   - {fileID: 460596}
   - {fileID: 451790}
   - {fileID: 451792}
   - {fileID: 460598}
+  - {fileID: 494588}
+  - {fileID: 494590}
+  - {fileID: 460594}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &460594
@@ -140,11 +188,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 160594}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.30000019, y: 1.10000002, z: -17.2999992}
+  m_LocalPosition: {x: -18.5699997, y: 7.5999999, z: -37.7900009}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 460592}
-  m_RootOrder: 0
+  m_RootOrder: 7
 --- !u!4 &460596
 Transform:
   m_ObjectHideFlags: 1
@@ -169,6 +217,42 @@ Transform:
   m_Children: []
   m_Father: {fileID: 460592}
   m_RootOrder: 4
+--- !u!4 &494586
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 194586}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.30000019, y: 1.10000002, z: -17.2999992}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 460592}
+  m_RootOrder: 0
+--- !u!4 &494588
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 194588}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -38.5499992, y: 7.5999999, z: -18.7800007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 460592}
+  m_RootOrder: 5
+--- !u!4 &494590
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 194590}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.2600002, y: 7.59000015, z: -19.7600002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 460592}
+  m_RootOrder: 6
 --- !u!82 &8260598
 AudioSource:
   m_ObjectHideFlags: 1
@@ -244,6 +328,9 @@ MonoBehaviour:
   - {fileID: 119658, guid: d2f9f696f1a8c98468727f27820154e1, type: 2}
   - {fileID: 171270, guid: b37487283183211478b698e2c50a9153, type: 2}
   - {fileID: 146176, guid: 822cc3ac8648e394c8d0ec0a0ed2fe71, type: 2}
+  - {fileID: 118364, guid: 5a6d2da1fc3f4b646a88eada82d0aa61, type: 2}
+  - {fileID: 177550, guid: 2ab58b2af8982de46a506988df1fb9a4, type: 2}
+  - {fileID: 148468, guid: 071a5320c4aaf6f478ae8a474024bf37, type: 2}
   ambiances:
   - {fileID: 8300000, guid: bfadcbf3e30945d46beadaf4307edadb, type: 3}
   - {fileID: 8300000, guid: 1303834c3fd408d468aedf182caa2c0e, type: 3}
