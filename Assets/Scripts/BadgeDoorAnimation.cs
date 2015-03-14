@@ -11,9 +11,7 @@ public class BadgeDoorAnimation : MonoBehaviour {
 
 	void OnTriggerEnter(Collider collider)
 	{
-		if (collider.tag.Equals("Player") && GestionnaireObjets.possedeObjet(GestionnaireObjets.Ramassable.CarteEtudiant))
-			anim.Play ("Armature|Open");
-		if (collider.tag.Equals("slender"))
+		if (collider.tag.Equals("Player") || collider.tag.Equals("slender"))// && GestionnaireObjets.possedeObjet(GestionnaireObjets.Ramassable.CarteEtudiant))
 			anim.Play ("Armature|Open");
 	}
 
