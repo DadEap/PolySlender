@@ -8,40 +8,17 @@ public class SlenderSight : MonoBehaviour {
 	public bool playerInRange;
 	public bool seenByPlayer;
 	private GameObject player;
+	private GameObject cam;
 	void Start () {
-	//	sphereCol = GetComponent<SphereCollider> ();
 		player = GameObject.FindGameObjectWithTag ("Player");
-		fieldOfViewAngle = 120f;
+		cam = GameObject.FindGameObjectWithTag ("MainCamera");
+		fieldOfViewAngle = 0.75f;
 		
 	}
 
 	void Update () {
-		Vector3 direction = player.transform.position - transform.position;
-		float angle = Vector3.Angle(direction,transform.forward);
-		playerInSight = false;
-		seenByPlayer = false;
-		
-		if(angle < fieldOfViewAngle * 0.5f)
-		{
-			RaycastHit hit;
-			if(Physics.Raycast(player.transform.position,direction.normalized,out hit,20))
-			{
-				if(hit.collider.gameObject == player)
-				{
-					playerInSight = true;
-				}
-			}
-		}
-
-		GameObject cam = GameObject.FindGameObjectWithTag ("MainCamera");
-		direction = transform.position - cam.transform.position;
-		angle = Vector3.Angle(direction,cam.transform.forward);
-		
-		if((angle < cam.camera.fieldOfView) && Vector3.Distance(cam.transform.position,transform.position) < 20)
-		{
-			seenByPlayer = true;
-		}
-
+		playerInSight = isVisible (transform, player.transform.position);
+		seenByPlayer = isVisible (cam.transform, transform.position);
 	}
 	
 	void OnTriggerStay(Collider other)
@@ -61,9 +38,24 @@ public class SlenderSight : MonoBehaviour {
 		}
 	}
 
-	bool isVisible(GameObject origin,GameObject target)
+	public bool isVisible(Transform origin,Vector3 target)
 	{
-		Vector3 eyesOrigin = origin.transform.position;
-		return true;
+		
+		Vector3 direction = (target - origin.position).normalized;
+		float dot = Vector3.Dot (origin.forward, direction);
+		RaycastHit hit;
+		if(dot > fieldOfViewAngle && Vector3.Distance(origin.position,target) < GameObject.Find("LampeDePoche").light.range)
+		{
+			if(Physics.Linecast(target,origin.position,out hit))
+			{
+				if(hit.collider.gameObject.tag == "StopView")
+					return false;
+				else
+					return true;
+			}
+			else
+				return true;
+		}
+		return false;
 	}
 }

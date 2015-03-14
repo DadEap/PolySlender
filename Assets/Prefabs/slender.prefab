@@ -415,12 +415,12 @@ GameObject:
   m_Component:
   - 224: {fileID: 22457662}
   - 95: {fileID: 9538714}
-  - 114: {fileID: 11496924}
   - 54: {fileID: 5496924}
   - 136: {fileID: 13696924}
   - 135: {fileID: 13596924}
   - 195: {fileID: 19596924}
-  - 114: {fileID: 11457462}
+  - 114: {fileID: 11410152}
+  - 114: {fileID: 11410150}
   m_Layer: 0
   m_Name: slender
   m_TagString: Untagged
@@ -807,7 +807,7 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11457462
+--- !u!114 &11410150
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -818,11 +818,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0b4d00edf9c0ef4f9dbbaa299bf18b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fieldOfViewAngle: 175
+  fieldOfViewAngle: 0
   playerInSight: 0
   playerInRange: 0
   seenByPlayer: 0
---- !u!114 &11496924
+--- !u!114 &11410152
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -929,11 +929,11 @@ NavMeshAgent:
   m_GameObject: {fileID: 138768}
   m_Enabled: 1
   m_Radius: .5
-  m_Speed: 3
-  m_Acceleration: 8
+  m_Speed: 5
+  m_Acceleration: 0
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 2
+  m_StoppingDistance: 3
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -957,7 +957,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -13.1999998, y: 8.69999981}
+  m_AnchoredPosition: {x: -11.0299997, y: .409999996}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: .5, y: .5}
 --- !u!1001 &100100000
