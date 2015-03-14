@@ -62,7 +62,7 @@ public class SlenderDeplacement : MonoBehaviour {
 		agent.CalculatePath (hit.position, path);
 		if(path.status == NavMeshPathStatus.PathComplete)
 		{
-			Debug.Log("true");
+			// Debug.Log("true");
 			agent.SetDestination(hit.position);
 			hasSeen = true;
 			distance = agent.remainingDistance;
