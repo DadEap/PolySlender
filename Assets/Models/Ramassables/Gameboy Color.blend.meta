@@ -1,0 +1,120 @@
+fileFormatVersion: 2
+guid: 26771907f07f1af489559725054cd9c9
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: button_a
+    100002: button_B
+    100004: button_select
+    100006: button_start
+    100008: D-Pad
+    100010: //RootNode
+    100012: gameboy_color_logo_position
+    100014: power_icon
+    100016: power_light
+    100018: screen
+    100020: Screen_Cover
+    100022: switch
+    100024: Volume_Control
+    400000: button_a
+    400002: button_B
+    400004: button_select
+    400006: button_start
+    400008: D-Pad
+    400010: //RootNode
+    400012: gameboy_color_logo_position
+    400014: power_icon
+    400016: power_light
+    400018: screen
+    400020: Screen_Cover
+    400022: switch
+    400024: Volume_Control
+    2300000: button_a
+    2300002: button_B
+    2300004: button_select
+    2300006: button_start
+    2300008: D-Pad
+    2300010: //RootNode
+    2300012: power_light
+    2300014: screen
+    2300016: Screen_Cover
+    2300018: switch
+    2300020: Volume_Control
+    3300000: button_a
+    3300002: button_B
+    3300004: button_select
+    3300006: button_start
+    3300008: D-Pad
+    3300010: //RootNode
+    3300012: power_light
+    3300014: screen
+    3300016: Screen_Cover
+    3300018: switch
+    3300020: Volume_Control
+    4300000: Gameboy_Chassis
+    4300002: Volume_Control
+    4300004: switch
+    4300006: Screen_Cover
+    4300008: power_light
+    4300010: screen
+    4300012: button_start
+    4300014: button_select
+    4300016: button_a
+    4300018: button_B
+    4300020: D-Pad
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

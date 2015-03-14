@@ -87,9 +87,6 @@ public class SlenderDeplacement : MonoBehaviour {
 			NavMesh.SamplePosition(target,out hit,radius,1);
 
 			GameObject cam = GameObject.FindGameObjectWithTag ("MainCamera");
-			Vector3 direction = (hit.position - cam.transform.position).normalized;
-			float dot = Vector3.Dot(cam.transform.forward,direction);
-			
 			if(slenderSight.isVisible(cam.transform,hit.position))
 			{
 				canWarp = false;
