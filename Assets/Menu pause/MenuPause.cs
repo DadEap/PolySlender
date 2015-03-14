@@ -23,7 +23,7 @@ public class MenuPause : MonoBehaviour
 	
 	void Start () 
 	{
-		
+		Screen.showCursor = true; 
 	}
 	
 	
@@ -34,11 +34,16 @@ public class MenuPause : MonoBehaviour
 			isPaused = !isPaused;
 		
 		
-		if(isPaused)
+		if (isPaused)
+		{
+			Screen.showCursor = true; 
 			Time.timeScale = 0f; // Le temps s'arrete
-
-		else
+		}
+		else 
+		{
+			Screen.showCursor = false;
 			Time.timeScale = 1.0f; // Le temps reprend
+		}
 		
 		
 	}
