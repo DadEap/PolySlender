@@ -505,19 +505,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b89776ffa265f544a1939767de0ed44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  concreteSoundStep:
-  - {fileID: 8300000, guid: 142e9a2939e44524ba5f429859506b71, type: 3}
-  woodSoundStep: []
-  metalSoundStep: []
-  terrainSoundStep: []
-  breathless: {fileID: 0}
-  normalSpeed: 2
-  sprintSpeed: 5
+  concreteSoundStep: {fileID: 8300000, guid: 142e9a2939e44524ba5f429859506b71, type: 3}
+  normalSpeed: 3
+  sprintSpeed: 6
   delayBetweenStep: .5
-  delayBetweenBreathless: 15
-  maxEndurance: 0
-  perteEndurance: 0
-  gainEndurance: 0
+  delayBetweenRun: 10
+  maxEndurance: 600
+  perteEndurance: 3
+  gainEndurance: 1
 --- !u!114 &11424380
 MonoBehaviour:
   m_ObjectHideFlags: 1
