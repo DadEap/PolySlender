@@ -40,9 +40,12 @@ public class SlenderDeplacement : MonoBehaviour {
 		{
 			Waiting ();
 		}
-		else if (slenderSight.playerInSight || slenderSight.playerInRange) {
+		else if (slenderSight.playerInSight) {
 			Chasing ();
-		}  
+		}
+		else if (slenderSight.playerInRange){
+			LookForPosition();
+		}
 		else 
 		{
 			Warping();
@@ -51,21 +54,20 @@ public class SlenderDeplacement : MonoBehaviour {
 
 	void Chasing()
 	{
-		NavMeshHit hit;
 		NavMeshPath path = new NavMeshPath();
-		NavMesh.SamplePosition(player.position,out hit,radius,1);
-		agent.CalculatePath (hit.position, path);
+		//NavMesh.SamplePosition(player.position,out hit,radius,1);
+		agent.CalculatePath (player.position, path);
 		Debug.Log (path.status);
 		if(path.status == NavMeshPathStatus.PathComplete)
 		{
-			agent.SetDestination(hit.position);
+			agent.SetDestination(player.position);
 			distance = agent.remainingDistance;
 		}
 		else
 			Warping();
 
 		if (!slenderSight.playerInSight)
-						distance = Mathf.Infinity;
+			distance = Mathf.Infinity;
 
 	}
 
@@ -103,7 +105,7 @@ public class SlenderDeplacement : MonoBehaviour {
 
 	void Waiting ()
 	{
-		agent.Stop();
+		agent.Stop(true);
 		if(slenderSight.playerInSight)
 			lifeCompteur++;
 		distance = agent.remainingDistance;
@@ -115,7 +117,7 @@ public class SlenderDeplacement : MonoBehaviour {
 		//distance = agent.remainingDistance;
 	}
 
-	void Killing()
+	public void Killing()
 	{
 		distance = -1.0f;
 		Debug.Log (distance);
