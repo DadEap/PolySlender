@@ -11,22 +11,22 @@ using System.Collections.Generic; // pour le type List<T>
 public class GestionnaireObjets : MonoBehaviour {
 
 	public enum Ramassable {
-		CarteEtudiant,
+		CarteEtudiante,
 		TOEIC,
-		Conventions,
-		Certificat,
-		Bulletin,
+		ConventionsDeStage,
+		CertificatDeScolarite,
+		BulletinDeNotes,
 		Ventoline,
 		GameboyColor,
-		bag,
-		HDD
+		SacDeCours,
+		DisqueDur
 	}
 
 	public List<GameObject> ramassables; // affecté dans l'éditeur
 	public List<AudioClip> ambiances; // affecté dans l'éditeur
 
 	private static List<Ramassable> listeObjets; // liste des objets ramassés
-
+	private static int nbrRamassables;
 	private static GestionnaireObjets instance; // référence à soi meme, singleton
 
 
@@ -34,6 +34,7 @@ public class GestionnaireObjets : MonoBehaviour {
 	void Start () {
 		// singleton
 		instance = this;
+		nbrRamassables = ramassables.Count;
 		// on commence avec aucun objet
 		listeObjets = new List<Ramassable> ();
 		// on positionne aléatoirement les objets à ramasser dans le niveau
@@ -101,6 +102,10 @@ public class GestionnaireObjets : MonoBehaviour {
 
 	public static int nombreObjets(){
 		return listeObjets.Count;
+	}
+
+	public static int nombreObjetsTotal(){
+		return nbrRamassables;
 	}
 	
 

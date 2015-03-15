@@ -24,8 +24,12 @@ public class AfficherTexte : MonoBehaviour {
 	{	
 		//Debug.Log ("ongui");
 		if (time > 0) {
+			Color guiColor=GUI.color;
+			// changer l'alpha juste pour ce label
+			GUI.color = new Color(1,1,1,(float)time/300);
 			GUI.Label (new Rect (Screen.width / 2 - 80, Screen.height / 2 - 40, 300, 100), texte);
 			time--;
+			GUI.color=guiColor; // on remet la couleur à sa valeur initiale car GUI.color est partagé pour tous les labels
 		}
 	}
 }
