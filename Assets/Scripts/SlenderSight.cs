@@ -48,7 +48,7 @@ public class SlenderSight : MonoBehaviour {
 		{
 			if(Physics.Linecast(target,origin.position,out hit))
 			{
-				if(hit.collider.gameObject.tag == "StopView")
+				if(hit.collider.gameObject.tag.Equals("StopView"))
 					return false;
 				else
 					return true;

@@ -19,7 +19,7 @@ public class SlenderDeplacement : MonoBehaviour {
 
 		lifeWarping = 500;
 		lifeCompteur = 0;
-		radius = 70;
+		radius = 90;
 		timeCompteur = 0;
 		timeWarping = 100;
 		slenderSight = GetComponent<SlenderSight> ();
@@ -44,7 +44,7 @@ public class SlenderDeplacement : MonoBehaviour {
 			Chasing ();
 		}
 		else if (slenderSight.playerInRange){
-			LookForPosition();
+			LookForPosition ();
 		}
 		else 
 		{
@@ -66,14 +66,11 @@ public class SlenderDeplacement : MonoBehaviour {
 		else
 			Warping();
 
-		if (!slenderSight.playerInSight)
-			distance = Mathf.Infinity;
 
 	}
 
 	void Warping()
 	{
-		distance = Mathf.Infinity;
 		bool canWarp = true;
 		lifeCompteur = 0;
 		if(timeCompteur == 0)
@@ -101,20 +98,25 @@ public class SlenderDeplacement : MonoBehaviour {
 		{
 			timeCompteur = 0;
 		}
+		distance = Mathf.Infinity;
 	}
 
 	void Waiting ()
 	{
 		agent.Stop(true);
-		if(slenderSight.playerInSight)
+		if(slenderSight.playerInSight){
 			lifeCompteur++;
-		distance = agent.remainingDistance;
+			distance = agent.remainingDistance;
+		}
+		else
+			distance = Mathf.Infinity;
 	}
 
 	void LookForPosition()
 	{
 		transform.LookAt(player.transform.position);
-		//distance = agent.remainingDistance;
+		if(!slenderSight.playerInSight)
+			distance = Mathf.Infinity;
 	}
 
 	public void Killing()

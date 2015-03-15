@@ -423,7 +423,7 @@ GameObject:
   - 114: {fileID: 11410150}
   m_Layer: 0
   m_Name: slender
-  m_TagString: Untagged
+  m_TagString: slender
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -930,7 +930,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_Radius: .5
   m_Speed: 5
-  m_Acceleration: 0
+  m_Acceleration: 2
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 3
@@ -957,7 +957,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -11.0299997, y: .409999996}
+  m_AnchoredPosition: {x: -11.0299997, y: 7.71999979}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: .5, y: .5}
 --- !u!1001 &100100000
