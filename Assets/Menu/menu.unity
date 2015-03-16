@@ -990,7 +990,7 @@ GUIText:
   m_Text: Quitter
   m_Anchor: 0
   m_Alignment: 0
-  m_PixelOffset: {x: -74, y: 58.6100006}
+  m_PixelOffset: {x: -300, y: 58.6100006}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 463af91dceb0fc7488de819b58545dfb, type: 3}
@@ -8045,8 +8045,8 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 1361459354}
   m_AABB:
-    m_Center: {x: .0230692774, y: .000869259238, z: .0420302376}
-    m_Extent: {x: .371918976, y: .420197546, z: .146705389}
+    m_Center: {x: .0227518529, y: .010654293, z: .0371789783}
+    m_Extent: {x: .371601582, y: .253807008, z: .151521623}
   m_DirtyAABB: 0
 --- !u!1 &1412528787
 GameObject:
