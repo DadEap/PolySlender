@@ -10,6 +10,8 @@ l’école, avant le lendemain. Il a un entretien très important pour lequel il
 notes, et son TOEIC. Il doit aussi récupérer son sac de cours, son disque dur, son certificat de scolarité
 et sa ventoline.
 
+[Vidéo de présentation](https://www.youtube.com/watch?v=gG6Mh1ZLcHc)
+
 ###Mise en œuvre collective de réalité virtuelle
 
 Ce projet fut effectué dans le cadre de notre 5ème année d’études d’ingénieurs en informatique à Polytech Tours, nous avons choisi l’option de dernière année "Réalité Virtuelle". Cette option prévoit la réalisation en groupe d’un
