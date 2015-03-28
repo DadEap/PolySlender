@@ -50,6 +50,5 @@ ExportedObj/
 # ===================================== #
 # Others                                #
 # ===================================== #
-*.exe
 ScenePrincipale.unity
 Assets/ScenePrincipale.unity
