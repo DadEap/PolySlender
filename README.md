@@ -34,4 +34,6 @@ courir, d'ouvrir les portes, ou de ramasser une page qu’on a trouvé.
 
 L’ambiance du jeu est de plus en plus oppressante au fil de la progression, grâce à une ambiance sonore stressante et qui évolue, une luminosité quasi inexistante et la présente d’un personnage mystérieux : Slenderman, issu d’une légende urbaine. Il ne faut pas se faire attraper par Slenderman, qui a la possibilité de se déplacer vers le joueur, de se téléporter discrètement, et qui produit divers effets dérangeants (un son brusque qui fait sursauter, un grésillement de l’écran qui indique qu’il est proche même si on ne le voit pas). 
 
+#Attention : les animations ne fonctionnent pas sur Unity 5
+
 
