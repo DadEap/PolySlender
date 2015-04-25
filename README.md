@@ -10,7 +10,7 @@ l’école, avant le lendemain. Il a un entretien très important pour lequel il
 notes, et son TOEIC. Il doit aussi récupérer son sac de cours, son disque dur, son certificat de scolarité
 et sa ventoline.
 
-[Vidéo de présentation](https://www.youtube.com/watch?v=gG6Mh1ZLcHc)
+[Vidéo de présentation](https://youtu.be/04r9hImdj8E)
 
 ###Mise en œuvre collective de réalité virtuelle
 
